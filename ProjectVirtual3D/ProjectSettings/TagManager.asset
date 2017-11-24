@@ -6,6 +6,9 @@ TagManager:
   tags:
   - TeleportIgnore
   - ExcludeTeleport
+  - FxTemporaire
+  - projectile
+  - Inventory
   layers:
   - Default
   - TransparentFX

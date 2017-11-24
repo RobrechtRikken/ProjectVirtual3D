@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 114340122671199770}
   - component: {fileID: 114960018149536616}
   - component: {fileID: 114440831740444210}
+  - component: {fileID: 114369090780258698}
+  - component: {fileID: 114760031910210526}
   m_Layer: 0
   m_Name: RightController
   m_TagString: Untagged
@@ -97,12 +99,12 @@ MonoBehaviour:
   tracerVisibility: 0
   cursorVisibility: 0
   maximumLength: {x: 7, y: Infinity}
-  tracerDensity: 40
+  tracerDensity: 30
   cursorRadius: 0.5
   heightLimitAngle: 100
   curveOffset: 1
-  rescaleTracer: 0
-  cursorMatchTargetRotation: 0
+  rescaleTracer: 1
+  cursorMatchTargetRotation: 1
   collisionCheckFrequency: 0
   customTracer: {fileID: 152786, guid: 78ca952d2c8152c44a89f9b406f7e137, type: 2}
   customCursor: {fileID: 1282291315491218, guid: ad8846c1fcb0cca49bde145fa4993bd7,
@@ -111,6 +113,18 @@ MonoBehaviour:
     type: 2}
   invalidLocationObject: {fileID: 1560384038736838, guid: 25834ca3ad3534a4d9b2d4f5f75972d7,
     type: 2}
+--- !u!114 &114369090780258698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1124954585587808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e104da36bd3b04b90c6ae969ac66dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColliderContainer: {fileID: 0}
 --- !u!114 &114440831740444210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,6 +140,24 @@ MonoBehaviour:
   checkType: 1
   identifiers:
   - ExcludeTeleport
+--- !u!114 &114760031910210526
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1124954585587808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947b27445602ed640b885db7e667dfc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabButton: 7
+  grabPrecognition: 0
+  throwMultiplier: 1
+  createRigidBodyWhenNotTouching: 0
+  controllerAttachPoint: {fileID: 0}
+  controllerEvents: {fileID: 0}
+  interactTouch: {fileID: 0}
 --- !u!114 &114960018149536616
 MonoBehaviour:
   m_ObjectHideFlags: 1
