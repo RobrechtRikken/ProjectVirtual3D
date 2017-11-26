@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 76966a85518a52048ba765cf6aae8590
-timeCreated: 1511708927
+guid: 16373c407ad0a54468e029446d8d3215
+timeCreated: 1511717808
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Cieling_3
-    100004: LightSources
-    400000: //RootNode
-    400002: Cieling_3
-    400004: LightSources
-    2300000: Cieling_3
-    2300002: LightSources
-    3300000: Cieling_3
-    3300002: LightSources
-    4300000: Cieling_3
-    4300002: LightSources
+    100000: Area
+    100002: //RootNode
+    100004: MedicalOnly
+    400000: Area
+    400002: //RootNode
+    400004: MedicalOnly
+    2300000: Area
+    2300002: MedicalOnly
+    3300000: Area
+    3300002: MedicalOnly
+    4300000: MedicalOnly
+    4300002: Area
   materials:
     importMaterials: 1
     materialName: 0
