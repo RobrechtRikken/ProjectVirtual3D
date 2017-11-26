@@ -9,6 +9,8 @@ TagManager:
   - FxTemporaire
   - projectile
   - Inventory
+  - Item
+  - InventorySlot
   layers:
   - Default
   - TransparentFX
