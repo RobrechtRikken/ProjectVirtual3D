@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 1df713da563f1cf41a04fdf2fe9a9ee5
+timeCreated: 1511651551
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Attache
+    100002: Attache_2
+    100004: Attache_3
+    100006: BagueRessort
+    100008: Bolt
+    100010: Bolt_2
+    100012: Bottle
+    100014: Bottle_2
+    100016: Boulon
+    100018: CopperMuzzle
+    100020: Cube
+    100022: Extinguisher
+    100024: Extrude_NURBS_1
+    100026: //RootNode
+    100028: Glass
+    100030: Handle
+    100032: Handle_2
+    100034: Handle_3
+    100036: HyperNURBS
+    100038: HyperNURBS_1
+    100040: HyperNURBS_2
+    100042: HyperNURBS_3
+    100044: HyperNURBS_4
+    100046: HyperNURBS_5
+    100048: Lathe_NURBS
+    100050: Muzzle
+    100052: Null_Object
+    100054: Pin
+    100056: Pipe
+    100058: Pipe_2
+    100060: PipeEnd
+    100062: PipeSleeve
+    100064: Ring
+    100066: Ring2
+    100068: Rings
+    100070: Sphere
+    100072: Spring
+    100074: Sweep_NURBS
+    100076: Sweep_NURBS_2
+    100078: Symmetry
+    100080: Top
+    100082: Top_2
+    100084: Top_3
+    400000: Attache
+    400002: Attache_2
+    400004: Attache_3
+    400006: BagueRessort
+    400008: Bolt
+    400010: Bolt_2
+    400012: Bottle
+    400014: Bottle_2
+    400016: Boulon
+    400018: CopperMuzzle
+    400020: Cube
+    400022: Extinguisher
+    400024: Extrude_NURBS_1
+    400026: //RootNode
+    400028: Glass
+    400030: Handle
+    400032: Handle_2
+    400034: Handle_3
+    400036: HyperNURBS
+    400038: HyperNURBS_1
+    400040: HyperNURBS_2
+    400042: HyperNURBS_3
+    400044: HyperNURBS_4
+    400046: HyperNURBS_5
+    400048: Lathe_NURBS
+    400050: Muzzle
+    400052: Null_Object
+    400054: Pin
+    400056: Pipe
+    400058: Pipe_2
+    400060: PipeEnd
+    400062: PipeSleeve
+    400064: Ring
+    400066: Ring2
+    400068: Rings
+    400070: Sphere
+    400072: Spring
+    400074: Sweep_NURBS
+    400076: Sweep_NURBS_2
+    400078: Symmetry
+    400080: Top
+    400082: Top_2
+    400084: Top_3
+    2300000: Attache
+    2300002: Attache_2
+    2300004: Attache_3
+    2300006: BagueRessort
+    2300008: Bolt
+    2300010: Bolt_2
+    2300012: Bottle_2
+    2300014: CopperMuzzle
+    2300016: Cube
+    2300018: Extrude_NURBS_1
+    2300020: Glass
+    2300022: Handle_3
+    2300024: Lathe_NURBS
+    2300026: PipeEnd
+    2300028: Ring
+    2300030: Ring2
+    2300032: Rings
+    2300034: Sphere
+    2300036: Sweep_NURBS
+    2300038: Sweep_NURBS_2
+    2300040: Top_3
+    3300000: Attache
+    3300002: Attache_2
+    3300004: Attache_3
+    3300006: BagueRessort
+    3300008: Bolt
+    3300010: Bolt_2
+    3300012: Bottle_2
+    3300014: CopperMuzzle
+    3300016: Cube
+    3300018: Extrude_NURBS_1
+    3300020: Glass
+    3300022: Handle_3
+    3300024: Lathe_NURBS
+    3300026: PipeEnd
+    3300028: Ring
+    3300030: Ring2
+    3300032: Rings
+    3300034: Sphere
+    3300036: Sweep_NURBS
+    3300038: Sweep_NURBS_2
+    3300040: Top_3
+    4300000: Glass
+    4300002: Bottle_2
+    4300004: Attache
+    4300006: Attache_2
+    4300008: Extrude_NURBS_1
+    4300010: Lathe_NURBS
+    4300012: Sphere
+    4300014: Top_3
+    4300016: Sweep_NURBS
+    4300018: Handle_3
+    4300020: Bolt
+    4300022: BagueRessort
+    4300024: Attache_3
+    4300026: PipeEnd
+    4300028: Ring2
+    4300030: Rings
+    4300032: CopperMuzzle
+    4300034: Ring
+    4300036: Bolt_2
+    4300038: Sweep_NURBS_2
+    4300040: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
