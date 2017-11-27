@@ -4212,7 +4212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1283241447
 Transform:
   m_ObjectHideFlags: 0
@@ -5474,6 +5474,10 @@ Prefab:
     - target: {fileID: 2300066, guid: 98ad0808e6687af4190501305b90a81a, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: 98ad0808e6687af4190501305b90a81a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.62
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98ad0808e6687af4190501305b90a81a, type: 3}
