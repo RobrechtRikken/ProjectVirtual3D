@@ -32,3 +32,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+ProjectVirtual3D/Assets/Materials/Materials\.meta
+
+ProjectVirtual3D/Assets/Models/Badge\.obj\.meta
+
+ProjectVirtual3D/Assets/Models/IdScanner\.obj\.meta
