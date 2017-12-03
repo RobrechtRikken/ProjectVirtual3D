@@ -11,6 +11,7 @@ TagManager:
   - Inventory
   - Item
   - InventorySlot
+  - MedicineSpawnLocation
   layers:
   - Default
   - TransparentFX
