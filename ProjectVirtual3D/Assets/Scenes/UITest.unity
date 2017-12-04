@@ -1028,12 +1028,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 224689260276732800, guid: e31298da4aeaa014db6d8430a6cb622a,
+    - target: {fileID: 224932576623636014, guid: e31298da4aeaa014db6d8430a6cb622a,
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224689260276732800, guid: e31298da4aeaa014db6d8430a6cb622a,
+    - target: {fileID: 224932576623636014, guid: e31298da4aeaa014db6d8430a6cb622a,
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 1

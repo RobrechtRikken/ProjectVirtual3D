@@ -9,10 +9,10 @@ public class LoadPatientsList : MonoBehaviour
 
 	public int patientAmount; //How many patients
 	[SerializeField] private List<string> patientList = new List<string>();
-	private string[] names = new string[] {"Dafalgan", "Amoxicilline", "Hydrochlorothiazide ", "omeprazole", "Lisinopril ","simvastatine"};
-	private string[] grams = new string[] { "50mg", "100mg", "Rikken", "200mg", "500mg"};
-	public Transform MedicnineListTransform;
-	public GameObject prefabMedicinePanel;
+	private string[] voornamen = new string[] {"Robin", "Stijn", "Anouk", "Stephanie", "Tim","Rene","Charlotte","Ludwig","Hilde","Philippe","Marjolien","Melissa","Marijke"};
+	private string[] achternamen = new string[] { "Peeters", "Van den Acker", "Rikken", "De Houwer", "Baetens", "De Baere","Van Elshocht","Janssens","Mertens","Maes","Jacobs","Willems","De Vos" };
+	public Transform patientListTransform;
+	public GameObject prefabPatientPanel;
 
 	public List<string> PatientList
 	{
@@ -38,7 +38,7 @@ public class LoadPatientsList : MonoBehaviour
 
 	string RandomName()
 	{
-		return grams[(int)Random.Range(0f, 12f)] + " " + names[(int) Random.Range(0f, 12f)];
+		return achternamen[(int)Random.Range(0f, 12f)] + " " + voornamen[(int) Random.Range(0f, 12f)];
 	}
 
 	void AddRow(string _namePatient)
@@ -46,7 +46,7 @@ public class LoadPatientsList : MonoBehaviour
 		//Instantiate(prefabPatientPanel, patientListTransform.transform.position, patientListTransform.transform.rotation);
 
 
-		GameObject newRow = Instantiate(prefabMedicinePanel,MedicnineListTransform);
+		GameObject newRow = Instantiate(prefabPatientPanel,patientListTransform);
 		newRow.transform.GetChild(0).GetComponent<Text>().text = _namePatient;
 
 
