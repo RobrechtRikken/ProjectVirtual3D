@@ -372,7 +372,7 @@ namespace VRTK
                 StopCoroutine(checkCanSnapRoutine);
             }
 
-            ForceUnsnap();
+            //ForceUnsnap();
             SetHighlightObjectActive(false);
             UnregisterAllUngrabEvents();
         }
