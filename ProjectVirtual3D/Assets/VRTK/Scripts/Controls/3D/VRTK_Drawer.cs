@@ -35,8 +35,8 @@ namespace VRTK
         [Range(0, 1)]
         public float minSnapClose = 1;
         [Tooltip("The maximum percentage of the drawer's total length that the drawer will open to.")]
-        [Range(0f, 1f)]
-        public float maxExtend = 1f;
+        [Range(0f, 10f)]
+        public float maxExtend = 10f;
 
         protected Rigidbody drawerRigidbody;
         protected Rigidbody handleRigidbody;
