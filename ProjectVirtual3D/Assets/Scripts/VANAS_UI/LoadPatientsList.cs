@@ -14,6 +14,8 @@ public class LoadPatientsList : MonoBehaviour
 	public Transform patientListTransform;
 	public GameObject prefabPatientPanel;
 
+	
+
 	public List<string> PatientList
 	{
 		get { return patientList; }
@@ -22,18 +24,7 @@ public class LoadPatientsList : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		string newName = "";
-		for (int i = 0; i < patientAmount; i++)
-		{
-			newName = RandomName();
-			if (patientList.Contains(newName))
-			{
-				newName = RandomName();
-			}
-			patientList.Add(newName);
-			AddRow(newName);
-		}
-
+		LoadPatients();
 	}
 
 	string RandomName()
@@ -51,4 +42,21 @@ public class LoadPatientsList : MonoBehaviour
 
 
 	}
+
+	void LoadPatients()
+	{
+		string newName = "";
+		for (int i = 0; i < patientAmount; i++)
+		{
+			newName = RandomName();
+			if (patientList.Contains(newName))
+			{
+				newName = RandomName();
+			}
+			patientList.Add(newName);
+			AddRow(newName);
+		}
+
+	}
+
 }

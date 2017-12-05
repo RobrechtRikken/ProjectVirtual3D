@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 222852743370010928}
   - component: {fileID: 114783952999226344}
   - component: {fileID: 114526059394861430}
+  - component: {fileID: 114909368629270978}
   m_Layer: 5
   m_Name: MedicinePanel
   m_TagString: Untagged
@@ -117,7 +118,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114783952999226344}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114909368629270978}
+        m_MethodName: SelectMedicineFromList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114783952999226344
@@ -147,6 +159,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114909368629270978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1318404067823456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c376d6a9d82fa654f88bdf060691b29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &222289736532567226
 CanvasRenderer:
   m_ObjectHideFlags: 1

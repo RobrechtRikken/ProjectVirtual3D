@@ -9,8 +9,8 @@ public class LoadMedicineList : MonoBehaviour
 
 	public int patientAmount; //How many patients
 	[SerializeField] private List<string> patientList = new List<string>();
-	private string[] names = new string[] {"Dafalgan", "Amoxicilline", "Hydrochlorothiazide ", "omeprazole", "Lisinopril ","simvastatine"};
-	private string[] grams = new string[] { "50mg", "100mg", "Rikken", "200mg", "500mg"};
+	private string[] names = new string[] {"Dafalgan", "Amoxicilline", "Hydrochlorothiazide ", "Omeprazole", "Lisinopril ","Simvastatine"};
+	private string[] grams = new string[] { "50mg", "100mg", "200mg", "500mg"};
 	public Transform MedicnineListTransform;
 	public GameObject prefabMedicinePanel;
 
@@ -38,7 +38,7 @@ public class LoadMedicineList : MonoBehaviour
 
 	string RandomName()
 	{
-		return grams[(int)Random.Range(0f, 12f)] + " " + names[(int) Random.Range(0f, 12f)];
+		return names[(int)Random.Range(0f, 5f)] + " " + grams[(int) Random.Range(0f, 3f)];
 	}
 
 	void AddRow(string _namePatient)
