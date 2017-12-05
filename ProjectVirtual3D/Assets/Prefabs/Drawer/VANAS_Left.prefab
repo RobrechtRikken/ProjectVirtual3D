@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 114641924123363394}
   m_Layer: 0
   m_Name: VANAS_DRAWER_Control (6)
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 114821539764680970}
   m_Layer: 0
   m_Name: VANAS_DRAWER_Control (3)
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 114743531579827362}
   m_Layer: 0
   m_Name: VANAS_DRAWER_Control (4)
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3844,7 +3844,7 @@ GameObject:
   - component: {fileID: 114601204461834176}
   m_Layer: 0
   m_Name: VANAS_DRAWER_Control (2)
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4309,7 +4309,7 @@ GameObject:
   - component: {fileID: 114919068812181520}
   m_Layer: 0
   m_Name: VANAS_DRAWER_Control (1)
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4933,7 +4933,7 @@ GameObject:
   - component: {fileID: 114230399288445446}
   m_Layer: 0
   m_Name: VANAS_DRAWER_Control (5)
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6067,7 +6067,7 @@ GameObject:
   - component: {fileID: 114621834551225714}
   m_Layer: 0
   m_Name: VANAS_DRAWER_Control
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -12,6 +12,8 @@ TagManager:
   - Item
   - InventorySlot
   - MedicineSpawnLocation
+  - DrawerSlot
+  - Drawer
   layers:
   - Default
   - TransparentFX
