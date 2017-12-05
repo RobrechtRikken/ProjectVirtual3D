@@ -16,6 +16,7 @@ TagManager:
   - MedicineListUI
   - DrawerSlot
   - Drawer
+  - DrawerLight
   layers:
   - Default
   - TransparentFX

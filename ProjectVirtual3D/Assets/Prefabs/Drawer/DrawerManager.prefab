@@ -53,4 +53,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawerTag: Drawer
   drawerSlotTag: DrawerSlot
+  drawerLightTag: DrawerLight
   drawerList: []
+  drawerLightON: {fileID: 2100000, guid: c1c8cbec741d5b94e8760f74a4644015, type: 2}
+  drawerLightOff: {fileID: 2100000, guid: db0e9371fcad2824daabbd6290dfb08a, type: 2}
+  lightBool: 0
+  drawerUnlocked: 0
