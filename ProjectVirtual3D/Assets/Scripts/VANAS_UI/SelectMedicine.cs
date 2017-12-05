@@ -8,4 +8,14 @@ public class SelectMedicine : MonoBehaviour {
 	{
 		PatientManager.instance.SetSelectedMedicine();
 	}
+
+	public void SelectAnotherMedicine()
+	{
+		PatientManager.instance.SelectAnotherMedicine();
+	}
+
+	public void ExitVanas()
+	{
+		PatientManager.instance.ExitVANAS ();
+	}
 }

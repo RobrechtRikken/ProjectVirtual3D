@@ -25,17 +25,18 @@ public class DoorAccess : MonoBehaviour
 	//After the door has been unlocked for X seconds we lock it again
 	void OnTriggerStay(Collider other)
 	{
-		time += Time.deltaTime;
 		
-		if (time >= timeToCheck)
+		if (other.tag == tagNameBadge) //Check the tag of the object, we only want our badge to grant access
 		{
-			if (other.tag == tagNameBadge) //Check the tag of the object, we only want our badge to grant access
+			time += Time.deltaTime;
+			if (time >= timeToCheck)
 			{
+			
 				UnlockDoor(door);
 			}
 			else
 			{
-				DenyAccess();
+				//DenyAccess();
 			}
 		}
 	}

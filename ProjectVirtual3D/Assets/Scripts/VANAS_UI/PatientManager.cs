@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PatientManager : MonoBehaviour {
 
 	public static PatientManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
 	private string selectedPatient = "";
-	public GameObject patientUI, medicineUI;
+	public GameObject patientUI, medicineUI,newMedicineUI;
+	public InputField patientText, medicijnText;
 	public DrawerManager drawManager;
+	public GameObject vanasUI;
 
 	//Awake is always called before any Start functions
 	void Awake()
@@ -52,6 +55,16 @@ public class PatientManager : MonoBehaviour {
 		StartCoroutine(UnlockDrawer());
 	}
 
+	public void SelectAnotherMedicine()
+	{
+		StartCoroutine(AnotherMedicine());
+	}
+
+	public void ExitVANAS()
+	{
+		StartCoroutine(ExitVanas());
+	}
+
 	public IEnumerator SetPatientCo()
 	{
 		Debug.Log("SELECT PATIENT");
@@ -59,6 +72,7 @@ public class PatientManager : MonoBehaviour {
 		//set patient name here and load the patient info
 		patientUI.SetActive(false);
 		medicineUI.SetActive(true);
+		medicijnText.text = "";
 	}
 
 	public IEnumerator UnlockDrawer()
@@ -69,6 +83,34 @@ public class PatientManager : MonoBehaviour {
 		Debug.Log("Unlock Drawer");
 		yield return new WaitForSeconds(1f);
 		//code to unlock drawer
+		medicineUI.SetActive(false);
+		newMedicineUI.SetActive(true);
 		drawManager.OpenARandomDrawer();
+	}
+
+	public IEnumerator AnotherMedicine()
+	{
+		drawManager.Reset();
+		Debug.Log("SELECT PATIENT");
+		yield return new WaitForSeconds(1f);
+		newMedicineUI.SetActive(false);
+		medicineUI.SetActive(true);
+		medicijnText.text = "";
+
+	}
+
+	public IEnumerator ExitVanas()
+	{
+		drawManager.Reset();
+		Debug.Log("SELECT PATIENT");
+		yield return new WaitForSeconds(1f);
+		patientText.text = "";
+		medicijnText.text = "";
+		newMedicineUI.SetActive(false);
+		medicineUI.SetActive(false);
+		patientUI.SetActive(true);
+		vanasUI.SetActive (false);
+
+
 	}
 }
