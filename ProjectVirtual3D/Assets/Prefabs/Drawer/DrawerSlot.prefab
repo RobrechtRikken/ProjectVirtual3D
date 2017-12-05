@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 114724334292138004}
   m_Layer: 0
   m_Name: DrawerSlot
-  m_TagString: Untagged
+  m_TagString: DrawerSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
