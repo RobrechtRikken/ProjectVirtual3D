@@ -7,6 +7,7 @@ public class PatientManager : MonoBehaviour {
 	public static PatientManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
 	private string selectedPatient = "";
 	public GameObject patientUI, medicineUI;
+	public DrawerManager drawManager;
 
 	//Awake is always called before any Start functions
 	void Awake()
@@ -68,5 +69,6 @@ public class PatientManager : MonoBehaviour {
 		Debug.Log("Unlock Drawer");
 		yield return new WaitForSeconds(1f);
 		//code to unlock drawer
+		drawManager.OpenARandomDrawer();
 	}
 }
