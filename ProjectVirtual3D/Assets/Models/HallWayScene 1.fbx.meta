@@ -240,6 +240,14 @@ ModelImporter:
     100464: Window_4
     100466: WindowFrame
     100468: WindowFrame_2
+    100470: Caps_1
+    100472: Caps_2
+    100474: Caps_3
+    100476: Caps_4
+    100478: Number_1
+    100480: Number_2
+    100482: Number_3
+    100484: Number_4
     400000: Attachment_Door
     400002: Attachment_Door_2
     400004: Attachment_Door_2_MeshPart0
@@ -475,6 +483,14 @@ ModelImporter:
     400464: Window_4
     400466: WindowFrame
     400468: WindowFrame_2
+    400470: Caps_1
+    400472: Caps_2
+    400474: Caps_3
+    400476: Caps_4
+    400478: Number_1
+    400480: Number_2
+    400482: Number_3
+    400484: Number_4
     2300000: Attachment_Door_2_MeshPart0
     2300002: Attachment_Door_2_MeshPart1
     2300004: Attachment_Door_2_MeshPart2
@@ -653,6 +669,14 @@ ModelImporter:
     2300350: Window_4
     2300352: WindowFrame
     2300354: WindowFrame_2
+    2300356: Caps_1
+    2300358: Caps_2
+    2300360: Caps_3
+    2300362: Caps_4
+    2300364: Number_1
+    2300366: Number_2
+    2300368: Number_3
+    2300370: Number_4
     3300000: Attachment_Door_2_MeshPart0
     3300002: Attachment_Door_2_MeshPart1
     3300004: Attachment_Door_2_MeshPart2
@@ -831,6 +855,14 @@ ModelImporter:
     3300350: Window_4
     3300352: WindowFrame
     3300354: WindowFrame_2
+    3300356: Caps_1
+    3300358: Caps_2
+    3300360: Caps_3
+    3300362: Caps_4
+    3300364: Number_1
+    3300366: Number_2
+    3300368: Number_3
+    3300370: Number_4
     4300000: Camera_BrownPart
     4300002: Camera_BlackParts
     4300004: Outside_Camera
@@ -1009,6 +1041,14 @@ ModelImporter:
     4300350: ExtendWall
     4300352: BlueFloor_1
     4300354: RedFloor
+    4300356: Number_4
+    4300358: Caps_4
+    4300360: Number_2
+    4300362: Caps_2
+    4300364: Number_3
+    4300366: Caps_3
+    4300368: Number_1
+    4300370: Caps_1
   materials:
     importMaterials: 1
     materialName: 0
