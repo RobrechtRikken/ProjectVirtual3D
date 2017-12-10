@@ -18,6 +18,18 @@ TagManager:
   - Drawer
   - DrawerLight
   - Badge
+  - Sex
+  - Weight
+  - Age
+  - FirstName
+  - LastName
+  - Complications
+  - Allergies
+  - CurrentMedicine
+  - Prescriptions
+  - PreviousDosages
+  - InfoText
+  - RemoveInfo
   layers:
   - Default
   - TransparentFX
