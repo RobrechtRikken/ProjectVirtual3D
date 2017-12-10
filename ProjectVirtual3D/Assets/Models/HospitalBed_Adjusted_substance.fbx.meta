@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 1019354987c044149849da91a4495d82
+timeCreated: 1512938851
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Backboard
+    100002: BedBottom
+    100004: Cube
+    100006: Cube_1
+    100008: Frame
+    100010: HeadBoard
+    100012: //RootNode
+    100014: Leg01
+    100016: Leg02
+    100018: Leg03
+    100020: Leg04
+    100022: Matras
+    100024: MotorCilinder
+    100026: Motorcilinder
+    100028: Spring
+    100030: Spring_2
+    100032: Spring_3
+    100034: Spring_4
+    100036: Wheel
+    100038: Wheel_2
+    100040: Wheel_3
+    100042: Wheel_4
+    100044: WheelBase
+    100046: WheelBase_1
+    100048: WheelBase_2
+    100050: WheelBase_3
+    400000: Backboard
+    400002: BedBottom
+    400004: Cube
+    400006: Cube_1
+    400008: Frame
+    400010: HeadBoard
+    400012: //RootNode
+    400014: Leg01
+    400016: Leg02
+    400018: Leg03
+    400020: Leg04
+    400022: Matras
+    400024: MotorCilinder
+    400026: Motorcilinder
+    400028: Spring
+    400030: Spring_2
+    400032: Spring_3
+    400034: Spring_4
+    400036: Wheel
+    400038: Wheel_2
+    400040: Wheel_3
+    400042: Wheel_4
+    400044: WheelBase
+    400046: WheelBase_1
+    400048: WheelBase_2
+    400050: WheelBase_3
+    2300000: Backboard
+    2300002: BedBottom
+    2300004: Cube
+    2300006: Cube_1
+    2300008: Frame
+    2300010: HeadBoard
+    2300012: Leg01
+    2300014: Leg02
+    2300016: Leg03
+    2300018: Leg04
+    2300020: Matras
+    2300022: MotorCilinder
+    2300024: Motorcilinder
+    2300026: Spring
+    2300028: Spring_2
+    2300030: Spring_3
+    2300032: Spring_4
+    2300034: Wheel
+    2300036: Wheel_2
+    2300038: Wheel_3
+    2300040: Wheel_4
+    2300042: WheelBase
+    2300044: WheelBase_1
+    2300046: WheelBase_2
+    2300048: WheelBase_3
+    3300000: Backboard
+    3300002: BedBottom
+    3300004: Cube
+    3300006: Cube_1
+    3300008: Frame
+    3300010: HeadBoard
+    3300012: Leg01
+    3300014: Leg02
+    3300016: Leg03
+    3300018: Leg04
+    3300020: Matras
+    3300022: MotorCilinder
+    3300024: Motorcilinder
+    3300026: Spring
+    3300028: Spring_2
+    3300030: Spring_3
+    3300032: Spring_4
+    3300034: Wheel
+    3300036: Wheel_2
+    3300038: Wheel_3
+    3300040: Wheel_4
+    3300042: WheelBase
+    3300044: WheelBase_1
+    3300046: WheelBase_2
+    3300048: WheelBase_3
+    4300000: HeadBoard
+    4300002: Cube_1
+    4300004: Backboard
+    4300006: Cube
+    4300008: Spring
+    4300010: Spring_2
+    4300012: Spring_3
+    4300014: Spring_4
+    4300016: WheelBase_3
+    4300018: Wheel
+    4300020: WheelBase_2
+    4300022: Wheel_2
+    4300024: WheelBase_1
+    4300026: Wheel_3
+    4300028: WheelBase
+    4300030: Wheel_4
+    4300032: Frame
+    4300034: Leg01
+    4300036: Leg02
+    4300038: Leg03
+    4300040: Leg04
+    4300042: Motorcilinder
+    4300044: MotorCilinder
+    4300046: BedBottom
+    4300048: Matras
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
