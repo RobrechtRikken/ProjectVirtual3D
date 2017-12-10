@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 2a1e732dbd53de643ab1a961858b3a8e
+timeCreated: 1512922192
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Closet
+    100002: DoorLeft
+    100004: DoorMiddle
+    100006: DoorRight
+    100008: Doors
+    100010: Glass
+    100012: Glass_2
+    100014: Glass_3
+    100016: Glass_4
+    100018: Handle
+    100020: Handle_2
+    100022: Handle_3
+    100024: Handle_4
+    100026: Handle_5
+    100028: Handle_6
+    100030: Poten
+    100032: Schab
+    100034: Schab_2
+    100036: Schab_3
+    100038: Schabben
+    100040: //RootNode
+    400000: Closet
+    400002: DoorLeft
+    400004: DoorMiddle
+    400006: DoorRight
+    400008: Doors
+    400010: Glass
+    400012: Glass_2
+    400014: Glass_3
+    400016: Glass_4
+    400018: Handle
+    400020: Handle_2
+    400022: Handle_3
+    400024: Handle_4
+    400026: Handle_5
+    400028: Handle_6
+    400030: Poten
+    400032: Schab
+    400034: Schab_2
+    400036: Schab_3
+    400038: Schabben
+    400040: //RootNode
+    2300000: Closet
+    2300002: DoorLeft
+    2300004: DoorMiddle
+    2300006: DoorRight
+    2300008: Glass
+    2300010: Glass_2
+    2300012: Glass_3
+    2300014: Glass_4
+    2300016: Handle
+    2300018: Handle_2
+    2300020: Handle_3
+    2300022: Handle_4
+    2300024: Handle_5
+    2300026: Handle_6
+    2300028: Poten
+    2300030: Schab
+    2300032: Schab_2
+    2300034: Schab_3
+    3300000: Closet
+    3300002: DoorLeft
+    3300004: DoorMiddle
+    3300006: DoorRight
+    3300008: Glass
+    3300010: Glass_2
+    3300012: Glass_3
+    3300014: Glass_4
+    3300016: Handle
+    3300018: Handle_2
+    3300020: Handle_3
+    3300022: Handle_4
+    3300024: Handle_5
+    3300026: Handle_6
+    3300028: Poten
+    3300030: Schab
+    3300032: Schab_2
+    3300034: Schab_3
+    4300000: Handle
+    4300002: Handle_2
+    4300004: Handle_3
+    4300006: Schab
+    4300008: Schab_2
+    4300010: Schab_3
+    4300012: Poten
+    4300014: Glass
+    4300016: Closet
+    4300018: DoorLeft
+    4300020: Handle_4
+    4300022: Glass_2
+    4300024: DoorMiddle
+    4300026: Handle_5
+    4300028: Glass_3
+    4300030: DoorRight
+    4300032: Handle_6
+    4300034: Glass_4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
