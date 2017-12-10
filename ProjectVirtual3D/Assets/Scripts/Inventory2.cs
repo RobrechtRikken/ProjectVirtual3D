@@ -6,6 +6,7 @@ using VRTK;
 public class Inventory2 : MonoBehaviour 
 {
 	public GameObject inventory;
+	public GameObject securityBadge;
 
 	// Use this for initialization
 	void Start () 
@@ -22,7 +23,7 @@ public class Inventory2 : MonoBehaviour
 	public void ShowInventory(object sender, ControllerInteractionEventArgs e)
 	{
 		//When the touchpad is clicked on this controller (inventory controller) check if the bottom or top half is clicked
-		//Top half will result in the enabling of your inventory shpere which will allow the adding of items to the inventory
+		//TOP HALF = open inventory
 		if (e.touchpadAxis.y > 0.1) 
 		{
 			Debug.Log ("Top of touchpad of " + this.name + " is clicked");
@@ -32,14 +33,22 @@ public class Inventory2 : MonoBehaviour
 			} 
 			else 
 			{
+				securityBadge.SetActive (true);
 				inventory.SetActive (true);
 			}
 		}
-		//Bottom half of the touchpad will show your inventory with all the items added inside
+		//Bottom half of the touchpad will show badge and remove inventory if open
 		if (e.touchpadAxis.y < -0.1) 
 		{
 			Debug.Log ("Bottom of touchpad of " + this.name + " is clicked");
-
+			if (!securityBadge.activeSelf) {
+				inventory.SetActive (false);
+				securityBadge.SetActive (true);
+			}
+			else 
+			{
+				securityBadge.SetActive (false);
+			}
 		}
 
 	}
