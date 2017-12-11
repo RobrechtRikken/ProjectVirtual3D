@@ -15272,7 +15272,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4013300408877750, guid: 70e13e9a97f80004c8d2f10c409d0219, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1229688197493222, guid: 70e13e9a97f80004c8d2f10c409d0219, type: 2}
       propertyPath: m_Name
@@ -17207,7 +17207,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 0
+  m_AllowMSAA: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
