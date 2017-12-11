@@ -13,6 +13,7 @@ public class Inventory2 : MonoBehaviour
 	{
 		GetComponent<VRTK_ControllerEvents>().TouchpadPressed += new ControllerInteractionEventHandler(ShowInventory);
 		inventory.gameObject.SetActive (false);
+		securityBadge.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -33,7 +34,7 @@ public class Inventory2 : MonoBehaviour
 			} 
 			else 
 			{
-				securityBadge.SetActive (true);
+				securityBadge.SetActive (false);
 				inventory.SetActive (true);
 			}
 		}
