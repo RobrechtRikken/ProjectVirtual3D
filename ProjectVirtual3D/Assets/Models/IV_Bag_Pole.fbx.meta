@@ -1,0 +1,131 @@
+fileFormatVersion: 2
+guid: 0b5251a9d7531e047915bb5ca6d2c6d3
+timeCreated: 1513040073
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: IV_Bag
+    100002: Iv_Bag_Connector
+    100004: IV_Bag_Connector_End
+    100006: IV_Bag_Liquid
+    100008: //RootNode
+    100010: IV_Bag_Wire
+    100012: IVBag1
+    100014: Metal_Pole_Bottom
+    100016: Metal_Pole_Top
+    100018: Wheels
+    100020: Wheels_Center_Black_Plastic
+    400000: IV_Bag
+    400002: Iv_Bag_Connector
+    400004: IV_Bag_Connector_End
+    400006: IV_Bag_Liquid
+    400008: //RootNode
+    400010: IV_Bag_Wire
+    400012: IVBag1
+    400014: Metal_Pole_Bottom
+    400016: Metal_Pole_Top
+    400018: Wheels
+    400020: Wheels_Center_Black_Plastic
+    2300000: IV_Bag
+    2300002: Iv_Bag_Connector
+    2300004: IV_Bag_Connector_End
+    2300006: IV_Bag_Liquid
+    2300008: IV_Bag_Wire
+    2300010: Metal_Pole_Bottom
+    2300012: Metal_Pole_Top
+    2300014: Wheels
+    2300016: Wheels_Center_Black_Plastic
+    3300000: IV_Bag
+    3300002: Iv_Bag_Connector
+    3300004: IV_Bag_Connector_End
+    3300006: IV_Bag_Liquid
+    3300008: IV_Bag_Wire
+    3300010: Metal_Pole_Bottom
+    3300012: Metal_Pole_Top
+    3300014: Wheels
+    3300016: Wheels_Center_Black_Plastic
+    4300000: IV_Bag
+    4300002: IV_Bag_Liquid
+    4300004: Wheels
+    4300006: Metal_Pole_Bottom
+    4300008: Wheels_Center_Black_Plastic
+    4300010: Metal_Pole_Top
+    4300012: IV_Bag_Wire
+    4300014: IV_Bag_Connector_End
+    4300016: Iv_Bag_Connector
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
