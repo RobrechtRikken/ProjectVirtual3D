@@ -16,6 +16,8 @@ public class LoadPatientsList : MonoBehaviour
 
 	
 
+	
+
 	public List<string> PatientList
 	{
 		get { return patientList; }
@@ -59,32 +61,11 @@ public class LoadPatientsList : MonoBehaviour
 
 		//Hardcoding some patient here -- load data from XML and make a Patient instance out of them
 
-		Patient patient1 = new Patient(1,"Stijn", "Getteman", 26, 64, "Man", new List<string>() {"Value 1","Value 2"}, 
-			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" },
-			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" });
-
-		Patient patient2 = new Patient(2,"Robin", "Rikken", 22, 75, "Man", new List<string>() { "Value 1", "Value 2" },
-			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" },
-			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" });
-
-		Patient patient3 = new Patient(3,"Anne", "Mertens", 38, 62, "Vrouw", new List<string>() { "Value 1", "Value 2" },
-			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" },
-			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" });
-
-		Patient patient4 = new Patient(4,"Sandra", "Claessens", 15, 40, "Vrouw", new List<string>() { "Value 1", "Value 2" },
-			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" },
-			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" });
-
-		PatientManager.instance.AddPatient(patient1);
-		PatientManager.instance.AddPatient(patient2);
-		PatientManager.instance.AddPatient(patient3);
-		PatientManager.instance.AddPatient(patient4);
-
-		AddRow(patient1.FirstName + " " + patient1.LastName);
+	/*	AddRow(patient1.FirstName + " " + patient1.LastName);
 		AddRow(patient2.FirstName + " " + patient2.LastName);
 		AddRow(patient3.FirstName + " " + patient3.LastName);
 		AddRow(patient4.FirstName + " " + patient4.LastName);
-
+		*/
 	}
 
 }

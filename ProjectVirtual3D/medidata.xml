@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicalAppData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <mPatients>
+    <Patient patientID="1">
+      <firstName>Stijn</firstName>
+      <lastName>Getteman</lastName>
+      <fullName>Stijn Getteman</fullName>
+      <age>26</age>
+      <sex>male</sex>
+      <weight>64</weight>
+      <patientType>adult</patientType>
+      <complications>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </complications>
+      <allergies>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </allergies>
+      <currentMedicines>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </currentMedicines>
+      <previousDosages>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </previousDosages>
+      <prescriptions>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </prescriptions>
+      <Complications>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Complications>
+      <Allergies>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Allergies>
+      <CurrentMedicines>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </CurrentMedicines>
+      <PreviousDosages>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </PreviousDosages>
+      <Prescriptions>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Prescriptions>
+    </Patient>
+    <Patient patientID="2">
+      <firstName>Robin</firstName>
+      <lastName>Rikken</lastName>
+      <fullName>Robin Rikken</fullName>
+      <age>22</age>
+      <sex>male</sex>
+      <weight>75</weight>
+      <patientType>adult</patientType>
+      <complications>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </complications>
+      <allergies>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </allergies>
+      <currentMedicines>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </currentMedicines>
+      <previousDosages>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </previousDosages>
+      <prescriptions>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </prescriptions>
+      <Complications>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Complications>
+      <Allergies>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Allergies>
+      <CurrentMedicines>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </CurrentMedicines>
+      <PreviousDosages>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </PreviousDosages>
+      <Prescriptions>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Prescriptions>
+    </Patient>
+    <Patient patientID="3">
+      <firstName>Anne</firstName>
+      <lastName>Mertens</lastName>
+      <fullName>Anne Mertens</fullName>
+      <age>38</age>
+      <sex>female</sex>
+      <weight>70</weight>
+      <patientType>pregnant</patientType>
+      <complications>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </complications>
+      <allergies>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </allergies>
+      <currentMedicines>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </currentMedicines>
+      <previousDosages>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </previousDosages>
+      <prescriptions>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </prescriptions>
+      <Complications>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Complications>
+      <Allergies>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Allergies>
+      <CurrentMedicines>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </CurrentMedicines>
+      <PreviousDosages>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </PreviousDosages>
+      <Prescriptions>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Prescriptions>
+    </Patient>
+    <Patient patientID="4">
+      <firstName>Sandra</firstName>
+      <lastName>Claessens</lastName>
+      <fullName>Sandra Claessens</fullName>
+      <age>15</age>
+      <sex>female</sex>
+      <weight>40</weight>
+      <patientType>child</patientType>
+      <complications>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </complications>
+      <allergies>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </allergies>
+      <currentMedicines>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </currentMedicines>
+      <previousDosages>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </previousDosages>
+      <prescriptions>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </prescriptions>
+      <Complications>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Complications>
+      <Allergies>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Allergies>
+      <CurrentMedicines>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </CurrentMedicines>
+      <PreviousDosages>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </PreviousDosages>
+      <Prescriptions>
+        <string>Value 1</string>
+        <string>Value 2</string>
+      </Prescriptions>
+    </Patient>
+  </mPatients>
+  <mMedicines />
+  <mTools />
+  <mMethods />
+  <mCabinets />
+  <mScenarios />
+  <mMetaData>
+    <mVersion>0.1</mVersion>
+    <mDateTime>2017-12-16T22:05:00.9617002+01:00</mDateTime>
+    <mGenerator>KdG XML Generator v0.1</mGenerator>
+  </mMetaData>
+</MedicalAppData>

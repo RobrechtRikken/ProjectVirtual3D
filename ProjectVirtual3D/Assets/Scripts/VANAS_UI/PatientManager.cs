@@ -39,7 +39,7 @@ public class PatientManager : MonoBehaviour {
 
 	void Start()
 	{
-	
+		patientList = MedicalAppDataManager.instance.MedicalAppData.mPatients;
 	}
 
 	
@@ -148,8 +148,6 @@ public class PatientManager : MonoBehaviour {
 
 	void SetPatientInfo()
 	{
-
-
 		Transform[] allChildren = patientInfoUI.gameObject.GetComponentsInChildren<Transform>();
 
 		foreach (Transform child in allChildren)
@@ -166,7 +164,7 @@ public class PatientManager : MonoBehaviour {
 							child.GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Age.ToString();
 							break;
 						case "Sex":
-							child.GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Sex;
+							child.GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Sex.ToString();
 							break;
 						case "Weight":
 							child.GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Weight.ToString() + " Kg";

@@ -1,22 +1,45 @@
-﻿
+﻿using System.Collections;
 using System.Collections.Generic;
-//Stores data about a patient
+using UnityEngine;
+using System.Xml.Serialization;
+using System.Runtime.Serialization;
+using System;
+using System.IO;
+
+[Serializable]
+public enum PatientType
+{
+    adult = 1,
+    child,
+    pregnant,
+    senior
+}
+
+public enum Sex
+{
+    male = 1,
+    female,
+    X
+}
+
+
 public class Patient
 {
-	#region Variables
-
-	private int patientID;
-	private string firstName;
-	private string fullName;
-	private string lastName;
-	private byte age;
-	private int weight;
-	private string sex;
-	private List<string> complications;
-	private List<string> allergies;
-	private List<string> currentMedicines;
-	private List<string> previousDosages;
-	private List<string> prescriptions;
+   #region Variables
+	[XmlAttribute]
+	public int patientID;
+	public string firstName;
+	public string lastName;
+	public string fullName;
+	public byte age;
+	public Sex sex;
+	public int weight;
+	public PatientType patientType;
+	public List<string> complications;
+	public List<string> allergies;
+	public List<string> currentMedicines;
+	public List<string> previousDosages;
+	public List<string> prescriptions;
 	#endregion
 
 	#region Properties
@@ -46,9 +69,14 @@ public class Patient
 	{
 		get { return weight; }
 	}
-	public string Sex
+	public Sex Sex
 	{
 		get { return sex; }
+	}
+
+	public PatientType PatientType
+	{
+		get { return patientType; }
 	}
 	public List<string> Complications
 	{
@@ -74,7 +102,13 @@ public class Patient
 
 
 	#endregion
-	public Patient(int _patientID,string _firstName, string _lastName, byte _age, int _weight, string _sex, List<string> _complications, List<string> _allergies, List<string> _currentMedicines, List<string>_previousDosages, List<string> _prescriptions)
+
+	public Patient()
+	{
+		//Default constructor
+	}
+
+	public Patient(int _patientID, string _firstName, string _lastName, byte _age, int _weight, Sex _sex, PatientType _patientType, List<string> _complications, List<string> _allergies, List<string> _currentMedicines, List<string> _previousDosages, List<string> _prescriptions)
 	{
 		patientID = _patientID;
 		firstName = _firstName;
@@ -83,6 +117,7 @@ public class Patient
 		age = _age;
 		weight = _weight;
 		sex = _sex;
+		patientType = _patientType;
 		complications = _complications;
 		allergies = _allergies;
 		currentMedicines = _currentMedicines;
@@ -92,3 +127,4 @@ public class Patient
 
 	}
 }
+
