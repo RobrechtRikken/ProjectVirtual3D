@@ -37,9 +37,9 @@ public class PatientManager : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
 		}
 
-	void Start()
+	void SetPatientList()
 	{
-		patientList = MedicalAppDataManager.instance.MedicalAppData.mPatients;
+	patientList = MedicalAppDataManager.instance.MedicalAppData.mPatients;
 	}
 
 	
@@ -155,19 +155,19 @@ public class PatientManager : MonoBehaviour {
 		switch (child.tag)
 					{
 						case "FirstName":
-							child.GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).FirstName;
+							child.GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).firstName;
 							break;
 						case "LastName":
-							child.GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).LastName;
+							child.GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).lastName;
 							break;
 						case "Age":
-							child.GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Age.ToString();
+							child.GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).age.ToString();
 							break;
 						case "Sex":
-							child.GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Sex.ToString();
+							child.GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).sex.ToString();
 							break;
 						case "Weight":
-							child.GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Weight.ToString() + " Kg";
+							child.GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).weight.ToString() + " Kg";
 							break;
 						case "Complications":
 							AddRow(child, "Complications");
@@ -194,42 +194,42 @@ public class PatientManager : MonoBehaviour {
 		switch (listName)
 		{
 			case "Complications":
-				for (int i = 0; i < patientList.Find(o => o.FullName == selectedPatient).Complications.Count; i++)
+				for (int i = 0; i < patientList.Find(o => o.fullName == selectedPatient).complications.Count; i++)
 				{
 					GameObject newRow = Instantiate(patientInfoPrefab, _child.transform);
-					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Complications[i];
+					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).complications[i];
 					patientInfoListToRemove.Add(newRow);
 				}
 				break;
 			case "Allergies":
-				for (int i = 0; i < patientList.Find(o => o.FullName == selectedPatient).Allergies.Count; i++)
+				for (int i = 0; i < patientList.Find(o => o.fullName == selectedPatient).allergies.Count; i++)
 				{
 					GameObject newRow = Instantiate(patientInfoPrefab, _child.transform);
-					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Allergies[i];
+					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).allergies[i];
 					patientInfoListToRemove.Add(newRow);
 				}
 				break;
 			case "CurrentMedicine":
-				for (int i = 0; i < patientList.Find(o => o.FullName == selectedPatient).CurrentMedicines.Count; i++)
+				for (int i = 0; i < patientList.Find(o => o.fullName == selectedPatient).currentMedicines.Count; i++)
 				{
 					GameObject newRow = Instantiate(patientInfoPrefab, _child.transform);
-					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).CurrentMedicines[i];
+					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).currentMedicines[i];
 					patientInfoListToRemove.Add(newRow);
 				}
 				break;
 			case "Prescriptions":
-				for (int i = 0; i < patientList.Find(o => o.FullName == selectedPatient).Prescriptions.Count; i++)
+				for (int i = 0; i < patientList.Find(o => o.fullName == selectedPatient).prescriptions.Count; i++)
 				{
 					GameObject newRow = Instantiate(patientInfoPrefab, _child.transform);
-					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).Prescriptions[i];
+					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).prescriptions[i];
 					patientInfoListToRemove.Add(newRow);
 				}
 				break;
 			case "PreviousDosages":
-				for (int i = 0; i < patientList.Find(o => o.FullName == selectedPatient).PreviousDosages.Count; i++)
+				for (int i = 0; i < patientList.Find(o => o.fullName == selectedPatient).previousDosages.Count; i++)
 				{
 					GameObject newRow = Instantiate(patientInfoPrefab, _child.transform);
-					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.FullName == selectedPatient).PreviousDosages[i];
+					newRow.transform.GetChild(0).GetComponent<Text>().text = patientList.Find(o => o.fullName == selectedPatient).previousDosages[i];
 					patientInfoListToRemove.Add(newRow);
 				}
 				break;

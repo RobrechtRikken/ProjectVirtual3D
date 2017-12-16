@@ -35,7 +35,7 @@ public class LoadPatientsList : MonoBehaviour
 		//Hardcoding some patient here -- load data from XML and make a Patient instance out of them
 		foreach (Patient patient in MedicalAppDataManager.instance.MedicalAppData.mPatients)
 		{
-			AddRow(patient.FirstName + " " + patient.LastName);
+			AddRow(patient.firstName + " " + patient.lastName);
 		}
 
 	}

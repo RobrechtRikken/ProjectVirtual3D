@@ -42,7 +42,7 @@ public class Patient
 	public List<string> prescriptions;
 	#endregion
 
-	#region Properties
+	/*#region Properties
 
 	public int PatientID
 	{
@@ -101,7 +101,7 @@ public class Patient
 
 
 
-	#endregion
+	#endregion*/
 
 	public Patient()
 	{
