@@ -59,44 +59,44 @@
       <weight>75</weight>
       <patientType>adult</patientType>
       <complications>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </complications>
       <allergies>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </allergies>
       <currentMedicines>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </currentMedicines>
       <previousDosages>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </previousDosages>
       <prescriptions>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </prescriptions>
       <Complications>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </Complications>
       <Allergies>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </Allergies>
       <CurrentMedicines>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </CurrentMedicines>
       <PreviousDosages>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </PreviousDosages>
       <Prescriptions>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 3</string>
+        <string>Value 4</string>
       </Prescriptions>
     </Patient>
     <Patient patientID="3">
@@ -108,44 +108,44 @@
       <weight>70</weight>
       <patientType>pregnant</patientType>
       <complications>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </complications>
       <allergies>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </allergies>
       <currentMedicines>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </currentMedicines>
       <previousDosages>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </previousDosages>
       <prescriptions>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </prescriptions>
       <Complications>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </Complications>
       <Allergies>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </Allergies>
       <CurrentMedicines>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </CurrentMedicines>
       <PreviousDosages>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </PreviousDosages>
       <Prescriptions>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 5</string>
+        <string>Value 6</string>
       </Prescriptions>
     </Patient>
     <Patient patientID="4">
@@ -157,44 +157,44 @@
       <weight>40</weight>
       <patientType>child</patientType>
       <complications>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </complications>
       <allergies>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </allergies>
       <currentMedicines>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </currentMedicines>
       <previousDosages>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </previousDosages>
       <prescriptions>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </prescriptions>
       <Complications>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </Complications>
       <Allergies>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </Allergies>
       <CurrentMedicines>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </CurrentMedicines>
       <PreviousDosages>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </PreviousDosages>
       <Prescriptions>
-        <string>Value 1</string>
-        <string>Value 2</string>
+        <string>Value 7</string>
+        <string>Value 8</string>
       </Prescriptions>
     </Patient>
   </mPatients>
@@ -205,7 +205,7 @@
   <mScenarios />
   <mMetaData>
     <mVersion>0.1</mVersion>
-    <mDateTime>2017-12-16T22:05:00.9617002+01:00</mDateTime>
+    <mDateTime>2017-12-16T23:25:45.904072+01:00</mDateTime>
     <mGenerator>KdG XML Generator v0.1</mGenerator>
   </mMetaData>
 </MedicalAppData>
