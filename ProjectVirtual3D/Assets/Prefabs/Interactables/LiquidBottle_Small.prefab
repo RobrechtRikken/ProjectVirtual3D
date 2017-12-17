@@ -38,10 +38,9 @@ GameObject:
   - component: {fileID: 4006879521318312}
   - component: {fileID: 33130723250516624}
   - component: {fileID: 23165880802388674}
-  - component: {fileID: 65479009627216184}
   m_Layer: 0
   m_Name: Bottle_2
-  m_TagString: Untagged
+  m_TagString: MedicineBottle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,9 +178,10 @@ GameObject:
   - component: {fileID: 114848800407144650}
   - component: {fileID: 114520177217705858}
   - component: {fileID: 114493062289069330}
+  - component: {fileID: 65486508604986594}
   m_Layer: 0
   m_Name: LiquidBottle_Small
-  m_TagString: Untagged
+  m_TagString: MedicineBottle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,7 +218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4006879521318312
 Transform:
   m_ObjectHideFlags: 1
@@ -320,7 +320,7 @@ Transform:
   m_GameObject: {fileID: 1851650556926386}
   m_LocalRotation: {x: -0.29721034, y: 0.64161205, z: -0.64161205, w: -0.29721034}
   m_LocalPosition: {x: -1.2981483, y: 0.757, z: 2.0362678}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4006879521318312}
   - {fileID: 4211465797917298}
@@ -502,12 +502,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65479009627216184
+--- !u!65 &65486508604986594
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1108071591666122}
+  m_GameObject: {fileID: 1851650556926386}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -1027,7 +1027,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 62.5, y: 16.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224319523383668384
 RectTransform:
@@ -1045,7 +1045,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 62.5, y: 16.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224403928068286456
 RectTransform:

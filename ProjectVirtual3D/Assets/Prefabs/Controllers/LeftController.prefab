@@ -643,7 +643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1337662551158064
 GameObject:
   m_ObjectHideFlags: 1
@@ -4406,7 +4406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 1550748716602026}
-  securityBadge: {fileID: 0}
+  securityBadge: {fileID: 1335474337912974}
 --- !u!114 &114247375894841096
 MonoBehaviour:
   m_ObjectHideFlags: 1

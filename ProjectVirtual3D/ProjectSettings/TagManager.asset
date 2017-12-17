@@ -43,6 +43,7 @@ TagManager:
   - Trigger_LeftButtock
   - Trigger_RightButtock
   - Trigger_Mouth
+  - MedicineBottle
   layers:
   - Default
   - TransparentFX

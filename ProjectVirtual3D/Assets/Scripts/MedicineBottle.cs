@@ -33,14 +33,14 @@ public class MedicineBottle : MonoBehaviour {
 			StopAllCoroutines ();
 			StartCoroutine (Showtooltip());
 			selectedAmount = minamount;
-			theTooltip.UpdateText(selectedAmountString + selectedAmount.ToString());
+			theTooltip.UpdateText(selectedAmountString + selectedAmount.ToString()+ "ml");
 		}
 		else 
 		{
 			StopAllCoroutines ();
 			StartCoroutine (Showtooltip());
 			selectedAmount++;
-			theTooltip.UpdateText(selectedAmountString + selectedAmount.ToString());
+			theTooltip.UpdateText(selectedAmountString + selectedAmount.ToString() + "ml");
 		}
 	}
 
