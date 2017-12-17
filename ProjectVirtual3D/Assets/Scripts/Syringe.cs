@@ -16,7 +16,7 @@ public class Syringe : MonoBehaviour {
 	private Collider latestCollider;
 	// Use this for initialization
 	void Start () {
-		
+		syringeTooltip.UpdateText (syringeSize + "ml");
 	}
 	
 	// Update is called once per frame
@@ -36,13 +36,14 @@ public class Syringe : MonoBehaviour {
 		{
 			Debug.Log ("Collider with the needle is a medicine bottle and selected amount will be put in the syringe");
 			bottleScript = col.gameObject.GetComponent<MedicineBottle> (); //Get bottlescript from the collided bottle
-			if (bottleScript.selectedAmount > syringeSize) {
+			if (bottleScript.selectedAmount > (syringeSize-amountInSyringe)) {
 				StopAllCoroutines ();
 				StartCoroutine (SyringeOverflow ());
 			}
 			else 
 			{
 				Debug.Log ("the amount selected will fit in this syringe");
+
 				StartCoroutine (SyringeFill ());
 			}
 		}
@@ -54,6 +55,14 @@ public class Syringe : MonoBehaviour {
 	}
 	public void ShowTooltipOnGrab()
 	{
+		if (amountInSyringe == 0) {
+			syringeTooltip.UpdateText (syringeSize + "ml");
+		}
+		else 
+		{
+
+			syringeTooltip.UpdateText (amountInSyringe + "ml");
+		}
 		syringeTooltip.gameObject.SetActive(true);
 	}
 
@@ -67,7 +76,8 @@ public class Syringe : MonoBehaviour {
 
 	public IEnumerator SyringeFill()
 	{
-		syringeTooltip.UpdateText (bottleScript.selectedAmount + "ml");
+		amountInSyringe += +bottleScript.selectedAmount;
+		syringeTooltip.UpdateText (amountInSyringe + "ml");
 		bottleScript.RemoveSelectedAmount ();
 		syringeTooltip.gameObject.SetActive (true);
 		yield return new WaitForSeconds (errorShowTime);
@@ -76,6 +86,6 @@ public class Syringe : MonoBehaviour {
 
 	public void Inject()
 	{
-		
+		amountInSyringe = 0;
 	}
 }
