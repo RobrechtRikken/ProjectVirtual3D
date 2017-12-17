@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 114369090780258698}
   - component: {fileID: 114760031910210526}
   - component: {fileID: 114382151876733394}
+  - component: {fileID: 114514129263174488}
   m_Layer: 0
   m_Name: RightController
   m_TagString: Untagged
@@ -1495,6 +1496,21 @@ MonoBehaviour:
   containerColor: {r: 0, g: 0, b: 0, a: 1}
   lineColor: {r: 0, g: 0, b: 0, a: 1}
   alwaysFaceHeadset: 0
+--- !u!114 &114514129263174488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1124954585587808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 3
+  controllerEvents: {fileID: 0}
+  interactTouch: {fileID: 0}
+  interactGrab: {fileID: 0}
 --- !u!114 &114534673557277266
 MonoBehaviour:
   m_ObjectHideFlags: 1
