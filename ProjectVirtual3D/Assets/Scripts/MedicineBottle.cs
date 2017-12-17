@@ -11,10 +11,12 @@ public class MedicineBottle : MonoBehaviour {
 	private float maxAmount;
 	private float minamount = 0f;
 	private string selectedAmountString = "Selected amount: ";
+	private float toolTipShowtime = 5f;
+
 	// Use this for initialization
 	void Start () 
 	{
-		maxAmount = amountInBottle;		
+		maxAmount = amountInBottle;	
 	}
 	
 	// Update is called once per frame
@@ -24,14 +26,19 @@ public class MedicineBottle : MonoBehaviour {
 
 	public void CycleAmountToUse()
 	{
+		
 		//Cycle through the amount of cc you want to take out of the bottle
-		Debug.Log (this.name + " is cycling through amounts");
-		if (selectedAmount == maxAmount) {
+		if (selectedAmount == maxAmount) 
+		{
+			StopAllCoroutines ();
+			StartCoroutine (Showtooltip());
 			selectedAmount = minamount;
 			theTooltip.UpdateText(selectedAmountString + selectedAmount.ToString());
 		}
 		else 
 		{
+			StopAllCoroutines ();
+			StartCoroutine (Showtooltip());
 			selectedAmount++;
 			theTooltip.UpdateText(selectedAmountString + selectedAmount.ToString());
 		}
@@ -45,5 +52,12 @@ public class MedicineBottle : MonoBehaviour {
 		selectedAmount = minamount;
 		//Set the maxAmount for the bottle to what is left in the bottle
 		maxAmount = amountInBottle;
+	}
+
+	public IEnumerator Showtooltip()
+	{
+		theTooltip.gameObject.SetActive (true);
+		yield return new WaitForSeconds (toolTipShowtime);
+		theTooltip.gameObject.SetActive (false);
 	}
 }
