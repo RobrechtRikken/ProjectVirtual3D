@@ -54,9 +54,11 @@ public class GenerateXMLOnStart : MonoBehaviour {
         //Load XML
 		//We will use this instance manager to load all the data to it's respective managers
 		MedicalAppDataManager.instance.LoadAppData(readXml(XMLFILE));
+
 		PatientManager.instance.SendMessage("SetPatientList");
 
 	}
+
 	
 	// Update is called once per frame
 	void Update ()
