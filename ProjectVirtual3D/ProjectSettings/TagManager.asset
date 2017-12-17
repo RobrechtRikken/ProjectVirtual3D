@@ -30,6 +30,19 @@ TagManager:
   - PreviousDosages
   - InfoText
   - RemoveInfo
+  - Trigger_LeftHand
+  - Trigger_RightHand
+  - Trigger_LeftLowerThigh
+  - Trigger_RightLowerThigh
+  - Trigger_LeftUpperArm
+  - Trigger_RightUpperArm
+  - Trigger_LeftLowerArm
+  - Trigger_RightLowerArm
+  - Trigger_LeftAbdomen
+  - Trigger_RightAbdomen
+  - Trigger_LeftButtock
+  - Trigger_RightButtock
+  - Trigger_Mouth
   layers:
   - Default
   - TransparentFX
