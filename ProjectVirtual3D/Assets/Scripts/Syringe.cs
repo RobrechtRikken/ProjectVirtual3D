@@ -20,10 +20,12 @@ public class Syringe : MonoBehaviour {
 	private Collider latestCollider;
 	private string syringeTooltipText;
 	private string injectText = "Inject ";
+	private string syringeEmpty = "Syringe is empty";
+	private string succesfullInjectionMessage = "Succesfully injected into : ";
 	// Use this for initialization
 	void Start () {
 		basicColor = new Color(0.18f,0.58f,0.96f);
-		goodColor = new Color(0.09f,0.89f,0.2f);
+		goodColor = new Color(0.08f,0.81f,0.18f);
 		faultColor = new Color(1f,0f,0f);
 		syringeTooltipText = "Capacity: " + syringeSize + "ml \n Contains : " + amountInSyringe + "ml";
 		syringeTooltip.UpdateText (syringeTooltipText);
@@ -247,8 +249,16 @@ public class Syringe : MonoBehaviour {
 
 	public void Inject()
 	{
-		amountInSyringe = 0;
-		UpdateTooltip ();
+		Debug.Log ("CURRENTLY INJECTING");
+		if (currentCollidingObject == null) 
+		{
+			Debug.Log ("Can't inject");
+		} 
+		else 
+		{
+			amountInSyringe = 0;
+			ShowinjectionCompletionTooltip ();
+		}
 	}
 
 	public void UpdateTooltip()
@@ -259,9 +269,19 @@ public class Syringe : MonoBehaviour {
 
 	public void ShowInjectionToolTip(Collider col)
 	{
-		currentCollidingObject = col.gameObject;
-		syringeTooltip.UpdateText (injectText + col.gameObject.name + "?");
-		syringeTooltip.gameObject.SetActive (true);
+		//If the syringe is empty show an error message that you can't inject
+		if (amountInSyringe == 0) {
+			currentCollidingObject = col.gameObject;
+			syringeTooltip.UpdateText (syringeEmpty);
+			syringeTooltip.gameObject.SetActive (true);
+		} 
+		else 
+		{
+			currentCollidingObject = col.gameObject;
+			syringeTooltip.UpdateText (injectText + col.gameObject.name + "?");
+			syringeTooltip.gameObject.SetActive (true);
+		}
+
 	}
 
 	public void ResetInjectionTooltip()
@@ -269,5 +289,12 @@ public class Syringe : MonoBehaviour {
 		currentCollidingObject = null;
 		UpdateTooltip ();
 		syringeTooltip.gameObject.SetActive (false);
+	}
+
+	public void ShowinjectionCompletionTooltip()
+	{
+		//Depending on good or bad injection poitioning the tooltip will go green or red
+		syringeTooltip.containerColor = goodColor;
+		syringeTooltip.UpdateText (succesfullInjectionMessage + currentCollidingObject.name);
 	}
 }

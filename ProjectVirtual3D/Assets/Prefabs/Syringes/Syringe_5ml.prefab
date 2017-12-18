@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4176626989070648}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Zylinder_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114119718601321142}
   - component: {fileID: 65835121703376940}
   - component: {fileID: 136130049919741346}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Syringe_5ml
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4852019928081844}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Needle_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4507405688091304}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Presser_Null
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4815086391490194}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Liquid_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4309699336363930}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GrabPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 4838110391342906}
   - component: {fileID: 33906875875330960}
   - component: {fileID: 23718370702778162}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Needle_Plastic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4400473987435188}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Glass_Inside_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4882380012552016}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Needle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 4111289942644000}
   - component: {fileID: 33766677759761152}
   - component: {fileID: 23206039817074904}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4465906866130710}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tube_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 4007134776692890}
   - component: {fileID: 33272637086658748}
   - component: {fileID: 23362030566173492}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Zylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4733311173292160}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Syringe_Outside_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 4496894725188676}
   - component: {fileID: 33751797362053410}
   - component: {fileID: 23246110279850492}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ring_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 4085996298017834}
   - component: {fileID: 33561667300761074}
   - component: {fileID: 23997079249572318}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ring_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4495667039547208}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Seal_1_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 4104524642679638}
   - component: {fileID: 33060007153674990}
   - component: {fileID: 23053423383966428}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Presser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 4631975885165566}
   - component: {fileID: 33373793962662004}
   - component: {fileID: 23301081348816308}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Seal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 4664883248791430}
   - component: {fileID: 33064503695175106}
   - component: {fileID: 23867449984717676}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Syringe_Outside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 4330946492236890}
   - component: {fileID: 33321610895741362}
   - component: {fileID: 23592798783278258}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 4134935504576584}
   - component: {fileID: 33547154157205020}
   - component: {fileID: 23237242783726580}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Neadles_Hull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 4952868189312656}
   - component: {fileID: 33885088457027036}
   - component: {fileID: 23749848801888554}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Needle_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 4485090774408892}
   - component: {fileID: 33001217389476352}
   - component: {fileID: 23082763466880956}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 4873406066812906}
   - component: {fileID: 33373026893226488}
   - component: {fileID: 23392276863520284}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Glass_Inside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 4054552171269946}
   - component: {fileID: 33604414963294700}
   - component: {fileID: 23824730908653614}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Glass_Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +515,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4246430138758058}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Grip_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +530,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4035000632784718}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Syringe_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4575746278846406}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Needle_Plastic_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +578,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4308382635185138}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Neadles_Hull_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 4556054525921210}
   - component: {fileID: 33925975060246282}
   - component: {fileID: 23797978330020856}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Rod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -610,7 +610,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4764661847773994}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Glass_Holder_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +625,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4687218872270512}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Presser_HN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1745,9 +1745,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114923407104692554}
   secondaryGrabActionScript: {fileID: 114529636572567370}
-  isUsable: 0
-  holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  isUsable: 1
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -1785,6 +1785,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c773175d088ada40922c93c8984fa5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentCollidingObject: {fileID: 0}
+  basicColor: {r: 48, g: 147, b: 244, a: 255}
+  goodColor: {r: 23, g: 227, b: 50, a: 255}
+  faultColor: {r: 255, g: 0, b: 0, a: 255}
   syringeTooltip: {fileID: 114768680455319074}
   syringeSize: 5
   amountInSyringe: 0
@@ -1879,7 +1883,18 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnUse:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114119718601321142}
+        m_MethodName: Inject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnUnuse:
