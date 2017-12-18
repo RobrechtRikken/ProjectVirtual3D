@@ -9,14 +9,16 @@ public class Syringe : MonoBehaviour {
 	public float syringeSize;
 	public float amountInSyringe;
 	public string medicineBottleTag = "MedicineBottle";
-	private string medicineBottleScriptName = "MedicineBottle";
+	//private string medicineBottleScriptName = "MedicineBottle";
 	public float errorShowTime = 5f;
 	private string overflowError = "Amount too large for this syringe";
 	public MedicineBottle bottleScript;
 	private Collider latestCollider;
+	private string syringeTooltipText;
 	// Use this for initialization
 	void Start () {
-		syringeTooltip.UpdateText (syringeSize + "ml");
+		syringeTooltipText = "Capacity: " + syringeSize + "ml \n Contains : " + amountInSyringe + "ml";
+		syringeTooltip.UpdateText (syringeTooltipText);
 	}
 	
 	// Update is called once per frame
@@ -54,15 +56,8 @@ public class Syringe : MonoBehaviour {
 		syringeTooltip.gameObject.SetActive(false);
 	}
 	public void ShowTooltipOnGrab()
-	{
-		if (amountInSyringe == 0) {
-			syringeTooltip.UpdateText (syringeSize + "ml");
-		}
-		else 
-		{
-
-			syringeTooltip.UpdateText (amountInSyringe + "ml");
-		}
+	{		
+		syringeTooltip.UpdateText (syringeTooltipText);
 		syringeTooltip.gameObject.SetActive(true);
 	}
 
@@ -77,7 +72,8 @@ public class Syringe : MonoBehaviour {
 	public IEnumerator SyringeFill()
 	{
 		amountInSyringe += +bottleScript.selectedAmount;
-		syringeTooltip.UpdateText (amountInSyringe + "ml");
+		UpdateTooltip ();
+		syringeTooltip.UpdateText (syringeTooltipText);
 		bottleScript.RemoveSelectedAmount ();
 		syringeTooltip.gameObject.SetActive (true);
 		yield return new WaitForSeconds (errorShowTime);
@@ -87,5 +83,11 @@ public class Syringe : MonoBehaviour {
 	public void Inject()
 	{
 		amountInSyringe = 0;
+		UpdateTooltip ();
+	}
+
+	public void UpdateTooltip()
+	{
+		syringeTooltipText = "Capacity: " + syringeSize + "ml \n Contains : " + amountInSyringe + "ml";
 	}
 }
