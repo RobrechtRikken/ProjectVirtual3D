@@ -22,7 +22,7 @@ public class GenerateXMLOnStart : MonoBehaviour {
         //Write XML
 		//Add Patients
         medi.mPatients.Add(new Patient(1, "Stijn", "Getteman", 26, 64, Sex.male, PatientType.adult, new List<string>() { "Value 1", "Value 2" },
-			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" },
+			new List<string>() { "Value 1", "Value 2","Value 1", "Value 2","Value 1", "Value 2","Value 1", "Value 2","Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" },
 			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" }));
 
 		medi.mPatients.Add(new Patient(2, "Robin", "Rikken", 22, 75, Sex.male, PatientType.adult, new List<string>() { "Value 3", "Value 4" },

@@ -16,6 +16,14 @@
       <allergies>
         <string>Value 1</string>
         <string>Value 2</string>
+        <string>Value 1</string>
+        <string>Value 2</string>
+        <string>Value 1</string>
+        <string>Value 2</string>
+        <string>Value 1</string>
+        <string>Value 2</string>
+        <string>Value 1</string>
+        <string>Value 2</string>
       </allergies>
       <currentMedicines>
         <string>Value 1</string>
@@ -125,11 +133,7 @@
   <mScenarios />
   <mMetaData>
     <mVersion>0.1</mVersion>
-<<<<<<< HEAD
-    <mDateTime>2017-12-17T19:23:38.0133979+01:00</mDateTime>
-=======
-    <mDateTime>2017-12-17T18:41:53.1935657+01:00</mDateTime>
->>>>>>> Development
+    <mDateTime>2017-12-18T15:31:06.8158372+01:00</mDateTime>
     <mGenerator>KdG XML Generator v0.1</mGenerator>
   </mMetaData>
 </MedicalAppData>

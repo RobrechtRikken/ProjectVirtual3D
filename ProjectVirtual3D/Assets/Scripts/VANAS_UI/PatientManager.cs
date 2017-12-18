@@ -9,6 +9,7 @@ public class PatientManager : MonoBehaviour {
 
 	public static PatientManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
 	private string selectedPatient = "";
+	private bool hasSelectedPatient = false;
 	public GameObject patientUI, medicineUI,newMedicineUI,patientInfoUI;
 	public InputField patientText, medicijnText;
 	public DrawerManager drawManager;
@@ -56,10 +57,14 @@ public class PatientManager : MonoBehaviour {
 	}
 	public void SetSelectedPatient(string _selectedPatient)
 	{
-		selectedPatient = _selectedPatient;
-		SetPatientInfo();
-		Debug.Log(selectedPatient);
-		StartCoroutine(SetPatientCo());
+		if (!hasSelectedPatient)
+		{
+			selectedPatient = _selectedPatient;
+			hasSelectedPatient = true;
+			SetPatientInfo ();
+			Debug.Log (selectedPatient);
+			StartCoroutine (SetPatientCo ());
+		}
 	}
 
 	public void SetSelectedMedicine()
@@ -84,6 +89,7 @@ public class PatientManager : MonoBehaviour {
 		//set patient name here and load the patient info
 		patientUI.SetActive(false);
 		medicineUI.SetActive(false);
+		newMedicineUI.SetActive(false);
 		patientInfoUI.SetActive(true);
 		medicijnText.text = "";
 	}
@@ -108,6 +114,7 @@ public class PatientManager : MonoBehaviour {
 		yield return new WaitForSeconds(1f);
 		newMedicineUI.SetActive(false);
 		patientInfoUI.SetActive(false);
+		patientUI.SetActive(false);
 		medicineUI.SetActive(true);
 		medicijnText.text = "";
 
@@ -117,6 +124,7 @@ public class PatientManager : MonoBehaviour {
 	{
 		//drawManager.Reset();
 		selectedPatient = "";
+		hasSelectedPatient = false;
 		medicijnText.text = "";
 		newMedicineUI.SetActive(false);
 		patientInfoUI.SetActive(false);
@@ -140,6 +148,7 @@ public class PatientManager : MonoBehaviour {
 		medicijnText.text = "";
 		newMedicineUI.SetActive(false);
 		medicineUI.SetActive(false);
+		patientInfoUI.SetActive(false);
 		patientUI.SetActive(true);
 		vanasUI.SetActive (false);
 
