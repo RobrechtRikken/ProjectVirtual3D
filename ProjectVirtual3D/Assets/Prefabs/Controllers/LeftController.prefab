@@ -4164,7 +4164,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 1
+  snapDuration: 0.5
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -4356,7 +4356,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 1
+  snapDuration: 0.5
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -4495,7 +4495,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 1
+  snapDuration: 0.5
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -4622,7 +4622,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 1
+  snapDuration: 0.5
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -4930,7 +4930,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 1
+  snapDuration: 0.5
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -5017,7 +5017,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 1
+  snapDuration: 0.5
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -5160,7 +5160,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 1
+  snapDuration: 0.5
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -5418,7 +5418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a07ca6d600893a4eac57430f8634254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolTipShowTimer: 20
+  toolTipShowTimer: 30
 --- !u!114 &114886984982229312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5569,7 +5569,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 1
+  snapDuration: 0.5
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -5593,7 +5593,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 1
+  snapDuration: 0.5
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
