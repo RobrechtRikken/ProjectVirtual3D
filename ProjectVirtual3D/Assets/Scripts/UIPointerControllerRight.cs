@@ -17,14 +17,14 @@ public class UIPointerControllerRight : MonoBehaviour {
 	public void whenPointerEntersUI()
 	{
 		Debug.Log ("Entered a UI canvas");
-		BezierPointer.enabled = !BezierPointer.enabled;
-		UIPointer.enabled = !UIPointer.enabled;
+		BezierPointer.enabled = false;
+			UIPointer.enabled = true;
 	}
 
 	public void whenPointerLeavesUI()
 	{
 		Debug.Log ("Left a Ui canvas");
-		BezierPointer.enabled = !BezierPointer.enabled;
-		UIPointer.enabled = !UIPointer.enabled;
+		BezierPointer.enabled = true;
+			UIPointer.enabled = false;
 	}
 }

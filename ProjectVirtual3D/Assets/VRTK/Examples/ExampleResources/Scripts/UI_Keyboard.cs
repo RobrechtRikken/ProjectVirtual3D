@@ -33,6 +33,7 @@
         private void Start()
         {
             input = GetComponentInChildren<InputField>();
+			ShowPatient (input.text);
         }
 
 
