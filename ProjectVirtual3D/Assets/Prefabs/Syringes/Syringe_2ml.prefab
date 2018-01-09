@@ -1069,16 +1069,16 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1872527207515122}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.72812384, y: -0.00016469817, z: 0}
-  m_LocalScale: {x: 1, y: 0.6666667, z: 1}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -24.01, y: 1.344, z: -31.788}
+  m_LocalScale: {x: 0.17639098, y: 0.11759393, z: 0.17639096}
   m_Children:
   - {fileID: 4707937883436146}
   - {fileID: 4946877248831896}
   - {fileID: 4793017223763142}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: -113.604004, z: -111.241005}
+  m_LocalEulerAnglesHint: {x: 90, y: -180, z: -90}
 --- !u!4 &4946877248831896
 Transform:
   m_ObjectHideFlags: 1
@@ -2089,7 +2089,7 @@ MonoBehaviour:
   grabAttachMechanicScript: {fileID: 114684504395863922}
   secondaryGrabActionScript: {fileID: 114658558223632554}
   isUsable: 1
-  holdButtonToUse: 0
+  holdButtonToUse: 1
   useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
