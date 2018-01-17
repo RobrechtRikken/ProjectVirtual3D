@@ -4164,7 +4164,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 0.5
+  snapDuration: 0.4
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -4258,7 +4258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b26f999cbdac8478b6c2a046256169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activationButton: 10
+  activationButton: 9
   activationMode: 0
   selectionButton: 3
   clickMethod: 1
@@ -4356,7 +4356,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 0.5
+  snapDuration: 0.4
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -4475,7 +4475,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1623149124797514}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6f4e7aa0eeb5484aa0b10a774a51d31, type: 3}
   m_Name: 
@@ -4495,7 +4495,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 0.5
+  snapDuration: 0.4
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -4622,7 +4622,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 0.5
+  snapDuration: 0.4
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -4930,7 +4930,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 0.5
+  snapDuration: 0.4
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -5017,7 +5017,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 0.5
+  snapDuration: 0.4
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -5160,7 +5160,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 0.5
+  snapDuration: 0.4
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -5231,7 +5231,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1623149124797514}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90f6c0da1e5684e4c8c03acfadf2f77c, type: 3}
   m_Name: 
@@ -5484,7 +5484,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1623149124797514}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ec704cceb26f6f49b6c900fc83d8d18, type: 3}
   m_Name: 
@@ -5493,8 +5493,8 @@ MonoBehaviour:
   targetListPolicy: {fileID: 0}
   pointerRenderer: {fileID: 114138016681813606}
   activationButton: 9
-  holdButtonToActivate: 0
-  activateOnEnable: 1
+  holdButtonToActivate: 1
+  activateOnEnable: 0
   activationDelay: 0
   selectionButton: 10
   selectOnPress: 0
@@ -5569,7 +5569,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 0.5
+  snapDuration: 0.4
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
@@ -5593,7 +5593,7 @@ MonoBehaviour:
   highlightObjectPrefab: {fileID: 1289338697547044, guid: 175e57f63a837694cbeb64198c3a8246,
     type: 2}
   snapType: 2
-  snapDuration: 0.5
+  snapDuration: 0.4
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
   highlightColor: {r: 0, g: 1, b: 1, a: 0}
