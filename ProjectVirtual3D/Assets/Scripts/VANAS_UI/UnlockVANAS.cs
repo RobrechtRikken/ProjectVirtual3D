@@ -11,14 +11,21 @@ public class UnlockVANAS : MonoBehaviour
 	[SerializeField]
 	private float timeToEnter = 3f;
 	[SerializeField]
+	private float timeToBlink = 3f; //blink the "check to your left" text for X seconds when entering
+
+	public float blinkIntervals;
+	[SerializeField]
 	private string tagNameBadge = "Badge";
 	[SerializeField]
 	private GameObject screen; //the screen of the access control
 	[SerializeField]
 	private GameObject door; //The door that's associated with the access control
+	[SerializeField]
+	private GameObject unlockText;
 	public Material screenBaseColor;
 	public Material screenAccesDeniedColor;
 	public Material screenAccesGrantedColor;
+	
 
 	public GameObject patientUI;
 
@@ -63,6 +70,8 @@ public class UnlockVANAS : MonoBehaviour
 		{
 			screen.GetComponent<MeshRenderer>().material = screenAccesGrantedColor;
 			patientUI.SetActive(true);
+			StartCoroutine(Blink(timeToBlink));
+
 		}
 
 		//Activate script on door
@@ -80,6 +89,20 @@ public class UnlockVANAS : MonoBehaviour
 		}
 	}
 
+	IEnumerator Blink(float _waitTime)
+	{
+		float endTime = Time.time + _waitTime;
+		while (Time.time < endTime)
+		{
+			unlockText.SetActive(true);
+			yield return new WaitForSeconds(blinkIntervals);
+			unlockText.SetActive(false);
+			yield return new WaitForSeconds(blinkIntervals);
+		
+		}
+	}
+
+	
 	void DenyAccess()
 	{
 		if (screen != null)
