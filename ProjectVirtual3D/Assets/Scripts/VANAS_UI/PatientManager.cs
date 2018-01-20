@@ -17,6 +17,12 @@ public class PatientManager : MonoBehaviour {
 	private List<Patient> patientList = new List<Patient>();
 	public GameObject patientInfoPrefab;
 
+	[SerializeField]
+	private float timeToBlink = 3f; //blink the "check to your left" text for X seconds when entering
+	public float blinkIntervals = 0.5f;
+	[SerializeField]
+	private GameObject blinkObject;
+
 	private List<GameObject> patientInfoListToRemove = new List<GameObject>();
 
 	//Awake is always called before any Start functions
@@ -104,6 +110,7 @@ public class PatientManager : MonoBehaviour {
 		//code to unlock drawer
 		medicineUI.SetActive(false);
 		newMedicineUI.SetActive(true);
+		StartCoroutine(BlinkOnOff(timeToBlink));
 		drawManager.OpenARandomDrawer();
 	}
 
@@ -146,6 +153,7 @@ public class PatientManager : MonoBehaviour {
 		yield return new WaitForSeconds(1f);
 		patientText.text = "";
 		medicijnText.text = "";
+		selectedPatient = "";
 		newMedicineUI.SetActive(false);
 		medicineUI.SetActive(false);
 		patientInfoUI.SetActive(false);
@@ -155,6 +163,18 @@ public class PatientManager : MonoBehaviour {
 
 	}
 
+	IEnumerator BlinkOnOff(float _waitTime)
+	{
+		float endTime = Time.time + _waitTime;
+		while (Time.time < endTime)
+		{
+			blinkObject.SetActive(true);
+			yield return new WaitForSeconds(blinkIntervals);
+			blinkObject.SetActive(false);
+			yield return new WaitForSeconds(blinkIntervals);
+
+		}
+	}
 	void SetPatientInfo()
 	{
 		Transform[] allChildren = patientInfoUI.gameObject.GetComponentsInChildren<Transform>();
