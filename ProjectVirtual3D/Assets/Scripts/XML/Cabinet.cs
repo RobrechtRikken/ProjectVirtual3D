@@ -6,15 +6,16 @@ using System.Runtime.Serialization;
 using System;
 using System.IO;
 
-public class Cabinet  {
+public class Cabinet
+{
 
-    [XmlAttribute]
-    public int mID;
-    public List<CabinetDrawer> mDrawers;
+	[XmlAttribute]
+	public int mID;
+	public List<int> mDrawers;//list van ids van drawers 
 
-    public Cabinet()
-    { 
+	public Cabinet()
+	{
 		mID = 0;
-        mDrawers = new List<CabinetDrawer>();
+		mDrawers = new List<int>();
 	}
 }

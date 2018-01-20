@@ -9,36 +9,39 @@ using System.IO;
 [Serializable]
 public enum Unit
 {
-    ml,
-    units,
-    l
+	ml,
+	units,
+	l,
+	mg,
+	g
 }
 
 [Serializable]
 public enum Package
 {
-    box,
-    flask,
-    bottle,
-    baxter
+	box,
+	flask,
+	bottle,
+	baxter
 }
 
-public class Medicine  {
-    [XmlAttribute]
-    public int mID;
-    public string mName;
-    public int quantity;
-    public Unit mUnit;
-    public Package mPackage;
-    public List<PointsOfAttention> mPointsOfAttention;
+public class Medicine
+{
+	[XmlAttribute]
+	public int mID;
+	public string mName;
+	public int mQuantity;
+	public Unit mUnit;
+	public Package mPackage;
+	public string mPointsOfAttention;//holds points of attention separated by # as a splitter
 
 	public Medicine()
-    {
-        mName = "";
-        mID = 0;
-        quantity = 0;
-        mUnit = Unit.ml;
-        mPackage = Package.box;
-        mPointsOfAttention = new List<PointsOfAttention>();
-    }
+	{
+		mName = "";
+		mID = 0;
+		mQuantity = 0;
+		mUnit = Unit.ml;
+		mPackage = Package.box;
+		mPointsOfAttention = "";
+	}
 }

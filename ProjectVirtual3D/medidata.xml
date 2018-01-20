@@ -1,139 +1,276 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MedicalAppData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <mPatients>
-    <Patient patientID="1">
-      <firstName>Stijn</firstName>
-      <lastName>Getteman</lastName>
-      <fullName>Stijn Getteman</fullName>
-      <age>26</age>
-      <sex>male</sex>
-      <weight>64</weight>
+    <Patient patientID="0">
+      <firstName>Tim</firstName>
+	  <lastName>Roelandts</lastName>
+	  <fullName>Tim Roelandts</fullName>
+      <age>23</age>
+      <weight>83</weight>
       <patientType>adult</patientType>
-      <complications>
-        <string>Value 1</string>
-        <string>Value 2</string>
-      </complications>
-      <allergies>
-        <string>Value 1</string>
-        <string>Value 2</string>
-        <string>Value 1</string>
-        <string>Value 2</string>
-        <string>Value 1</string>
-        <string>Value 2</string>
-        <string>Value 1</string>
-        <string>Value 2</string>
-        <string>Value 1</string>
-        <string>Value 2</string>
-      </allergies>
-      <currentMedicines>
-        <string>Value 1</string>
-        <string>Value 2</string>
-      </currentMedicines>
-      <previousDosages>
-        <string>Value 1</string>
-        <string>Value 2</string>
-      </previousDosages>
-      <prescriptions>
-        <string>Value 1</string>
-        <string>Value 2</string>
-      </prescriptions>
+      <sex>male</sex>
+         <allergies/>
+         <complications/>
+         <currentMedicines/>
+         <previousDosages/>
+         <prescriptions/>
+     
+    </Patient>
+    <Patient patientID="1">
+      <firstName>Kristien</firstName>
+	  <lastName>Peeters</lastName>
+	  <fullName>Kristien Peeters</fullName>
+      <age>14</age>
+      <weight>47</weight>
+      <patientType>child</patientType>
+      <sex>female</sex>
+     <allergies/>
+         <complications/>
+         <currentMedicines/>
+         <previousDosages/>
+         <prescriptions/>
     </Patient>
     <Patient patientID="2">
-      <firstName>Robin</firstName>
-      <lastName>Rikken</lastName>
-      <fullName>Robin Rikken</fullName>
-      <age>22</age>
+      <firstName>Ludwig</firstName>
+	  <lastName>Vermeiren</lastName>
+	  <fullName>Ludwig Vermeiren</fullName>
+      <age>63</age>
+      <weight>80</weight>
+      <patientType>senior</patientType>
       <sex>male</sex>
-      <weight>75</weight>
-      <patientType>adult</patientType>
-      <complications>
-        <string>Value 3</string>
-        <string>Value 4</string>
-      </complications>
-      <allergies>
-        <string>Value 3</string>
-        <string>Value 4</string>
-      </allergies>
-      <currentMedicines>
-        <string>Value 3</string>
-        <string>Value 4</string>
-      </currentMedicines>
-      <previousDosages>
-        <string>Value 3</string>
-        <string>Value 4</string>
-      </previousDosages>
-      <prescriptions>
-        <string>Value 3</string>
-        <string>Value 4</string>
-      </prescriptions>
+        <allergies/>
+         <complications/>
+         <currentMedicines/>
+         <previousDosages/>
+         <prescriptions/>
     </Patient>
     <Patient patientID="3">
-      <firstName>Anne</firstName>
-      <lastName>Mertens</lastName>
-      <fullName>Anne Mertens</fullName>
-      <age>38</age>
-      <sex>female</sex>
-      <weight>70</weight>
+      <firstName>Mieke</firstName>
+	  <lastName>Janssens</lastName>
+	  <fullName>Mieke Janssens</fullName>
+      <age>31</age>
+      <weight>78</weight>
       <patientType>pregnant</patientType>
-      <complications>
-        <string>Value 5</string>
-        <string>Value 6</string>
-      </complications>
-      <allergies>
-        <string>Value 5</string>
-        <string>Value 6</string>
-      </allergies>
-      <currentMedicines>
-        <string>Value 5</string>
-        <string>Value 6</string>
-      </currentMedicines>
-      <previousDosages>
-        <string>Value 5</string>
-        <string>Value 6</string>
-      </previousDosages>
-      <prescriptions>
-        <string>Value 5</string>
-        <string>Value 6</string>
-      </prescriptions>
-    </Patient>
-    <Patient patientID="4">
-      <firstName>Sandra</firstName>
-      <lastName>Claessens</lastName>
-      <fullName>Sandra Claessens</fullName>
-      <age>15</age>
       <sex>female</sex>
-      <weight>40</weight>
-      <patientType>child</patientType>
-      <complications>
-        <string>Value 7</string>
-        <string>Value 8</string>
-      </complications>
-      <allergies>
-        <string>Value 7</string>
-        <string>Value 8</string>
-      </allergies>
-      <currentMedicines>
-        <string>Value 7</string>
-        <string>Value 8</string>
-      </currentMedicines>
-      <previousDosages>
-        <string>Value 7</string>
-        <string>Value 8</string>
-      </previousDosages>
-      <prescriptions>
-        <string>Value 7</string>
-        <string>Value 8</string>
-      </prescriptions>
+         <allergies/>
+         <complications/>
+         <currentMedicines/>
+         <previousDosages/>
+         <prescriptions/>
     </Patient>
   </mPatients>
-  <mMedicines />
-  <mTools />
-  <mMethods />
-  <mCabinets />
-  <mScenarios />
+  <mMedicines>
+  <Medicine mID="0">
+      <mName>Paracetamol</mName>
+      <mQuantity>500</mQuantity>
+      <mUnit>mg</mUnit>
+      <mPackage>box</mPackage>
+      <mPointsOfAttention />
+    </Medicine>
+	 <Medicine mID="1">
+      <mName>Lorazepam</mName>
+      <mQuantity>1</mQuantity>
+      <mUnit>mg</mUnit>
+      <mPackage>box</mPackage>
+      <mPointsOfAttention>No water, melts in mouth </mPointsOfAttention>
+    </Medicine>
+	 <Medicine mID="2">
+      <mName>Metoclopramide</mName>
+      <mQuantity>2</mQuantity>
+      <mUnit>ml</mUnit>
+      <mPackage>bottle</mPackage>
+      <mPointsOfAttention>10mg/2ml</mPointsOfAttention>
+    </Medicine>
+	 <Medicine mID="3">
+      <mName>Piritramide</mName>
+      <mQuantity>2</mQuantity>
+      <mUnit>ml</mUnit>
+      <mPackage>bottle</mPackage>
+      <mPointsOfAttention>10mg/2ml</mPointsOfAttention>
+    </Medicine>
+	 <Medicine mID="4">
+      <mName>Insuline</mName>
+      <mQuantity>100</mQuantity>
+      <mUnit>units</mUnit>
+      <mPackage>bottle</mPackage>
+      <mPointsOfAttention />
+    </Medicine>
+	 <Medicine mID="5">
+      <mName>Alizapride</mName>
+      <mQuantity>2</mQuantity>
+      <mUnit>ml</mUnit>
+      <mPackage>bottle</mPackage>
+      <mPointsOfAttention>50mg/2ml</mPointsOfAttention>
+    </Medicine>
+	 <Medicine mID="6">
+      <mName>Amoxiciline</mName>
+      <mQuantity>1</mQuantity>
+      <mUnit>g</mUnit>
+      <mPackage>bottle</mPackage>
+      <mPointsOfAttention />
+    </Medicine>
+	 <Medicine mID="7">
+      <mName>NaCl</mName>
+      <mQuantity>20</mQuantity>
+      <mUnit>ml</mUnit>
+      <mPackage>bottle</mPackage>
+      <mPointsOfAttention />
+    </Medicine>
+	 <Medicine mID="8">
+      <mName>NaCl</mName>
+      <mQuantity>100</mQuantity>
+      <mUnit>ml</mUnit>
+      <mPackage>baxter</mPackage>
+      <mPointsOfAttention>0.9% </mPointsOfAttention>
+    </Medicine>
+	 <Medicine mID="9">
+      <mName>Ketorolax</mName>
+      <mQuantity>10</mQuantity>
+      <mUnit>mg</mUnit>
+      <mPackage>bottle</mPackage>
+      <mPointsOfAttention>10mg/ml</mPointsOfAttention>
+    </Medicine>
+   	</mMedicines>
+  <mTools>
+   <DeliveryTool mID="0">
+      <mName>Cup of water</mName>
+    </DeliveryTool>
+    <DeliveryTool mID="1">
+      <mName>Syringe</mName>
+    </DeliveryTool>
+    <DeliveryTool mID="2">
+      <mName>Baxter</mName>
+    </DeliveryTool>
+    <DeliveryTool mID="3">
+      <mName>Three way stopcock</mName>
+    </DeliveryTool>
+    <DeliveryTool mID="4">
+      <mName>Oral</mName>
+    </DeliveryTool>
+  </mTools>
+    <mDrawers>
+<CabinetDrawer mID="0">
+      <mMedicines>
+        <int>0</int>
+		<int>1</int>
+      </mMedicines>
+      <mDeliveryTools>
+      </mDeliveryTools>
+      <mIsLocked>true</mIsLocked>
+    </CabinetDrawer>
+	 <CabinetDrawer mID="1">
+      <mMedicines>
+        <int>3</int>
+      </mMedicines>
+      <mDeliveryTools>
+      </mDeliveryTools>
+      <mIsLocked>true</mIsLocked>
+    </CabinetDrawer>
+	 <CabinetDrawer mID="2">
+      <mMedicines>
+        <int>4</int>
+      </mMedicines>
+      <mDeliveryTools>
+       </mDeliveryTools>
+      <mIsLocked>true</mIsLocked>
+    </CabinetDrawer>
+	 <CabinetDrawer mID="3">
+      <mMedicines>
+	  <int>2</int>
+      </mMedicines>
+      <mDeliveryTools>
+      </mDeliveryTools>
+      <mIsLocked>true</mIsLocked>
+    </CabinetDrawer>
+	 <CabinetDrawer mID="4">
+      <mMedicines>
+	  <int>5</int>
+      </mMedicines>
+      <mDeliveryTools>
+      </mDeliveryTools>
+      <mIsLocked>true</mIsLocked>
+    </CabinetDrawer>
+	 <CabinetDrawer mID="5">
+      <mMedicines>
+	  <int>6</int>
+	  <int>7</int>
+      </mMedicines>
+      <mDeliveryTools>
+      </mDeliveryTools>
+      <mIsLocked>true</mIsLocked>
+    </CabinetDrawer>
+	 <CabinetDrawer mID="6">
+      <mMedicines>
+	  <int>8</int>
+	  <int>9</int>
+      </mMedicines>
+      <mDeliveryTools>
+      </mDeliveryTools>
+      <mIsLocked>true</mIsLocked>
+    </CabinetDrawer>
+    </mDrawers>
+  <mCabinets>
+ <Cabinet mID="0">
+      <mDrawers>
+        <int>0</int>
+		<int>3</int>
+		<int>4</int>
+      </mDrawers>
+    </Cabinet>
+	<Cabinet mID="1">
+      <mDrawers>
+        <int>1</int>
+      </mDrawers>
+    </Cabinet>
+	<Cabinet mID="2">
+      <mDrawers>
+        <int>2</int>
+      </mDrawers>
+    </Cabinet>
+	<Cabinet mID="3">
+      <mDrawers>
+      </mDrawers>
+    </Cabinet>
+	<Cabinet mID="4">
+      <mDrawers>
+        <int>5</int>
+		<int>6</int>
+      </mDrawers>
+    </Cabinet>
+  </mCabinets>
+  <mScenarios>
+  <Scenario mID="0">
+      <mName>Patient 1</mName>
+      <mPatientID>0</mPatientID>
+      <mCabinetID>0</mCabinetID>
+      <mMedicineID>3</mMedicineID>
+      <mDeliveryTool>0</mDeliveryTool>
+    </Scenario>
+	 <Scenario mID="1">
+      <mName>Patient 2</mName>
+      <mPatientID>1</mPatientID>
+      <mCabinetID>0</mCabinetID>
+      <mMedicineID>1</mMedicineID>
+      <mDeliveryTool>4</mDeliveryTool>
+    </Scenario>
+	 <Scenario mID="2">
+      <mName>Patient 3</mName>
+      <mPatientID>2</mPatientID>
+      <mCabinetID>2</mCabinetID>
+      <mMedicineID>4</mMedicineID>
+      <mDeliveryTool>1</mDeliveryTool>
+    </Scenario>
+	 <Scenario mID="3">
+      <mName>Patient 4</mName>
+      <mPatientID>3</mPatientID>
+      <mCabinetID>0</mCabinetID>
+      <mMedicineID>2</mMedicineID>
+      <mDeliveryTool>1</mDeliveryTool>
+    </Scenario>
+  </mScenarios>
   <mMetaData>
     <mVersion>0.1</mVersion>
-    <mDateTime>2018-01-18T23:42:18.6867483+01:00</mDateTime>
+    <mDateTime>2018-01-20T18:16:38.1844136+01:00</mDateTime>
     <mGenerator>KdG XML Generator v0.1</mGenerator>
   </mMetaData>
 </MedicalAppData>

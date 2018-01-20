@@ -9,7 +9,7 @@ using System.IO;
 [Serializable]
 public enum PatientType
 {
-    adult = 1,
+    adult = 0,
     child,
     pregnant,
     senior
@@ -17,7 +17,7 @@ public enum PatientType
 
 public enum Sex
 {
-    male = 1,
+    male = 0,
     female,
     X
 }
@@ -32,11 +32,11 @@ public class Patient
 	public string lastName;
 	public string fullName;
 	public byte age;
-	public Sex sex;
 	public int weight;
 	public PatientType patientType;
-	public List<string> complications;
+	public Sex sex;
 	public List<string> allergies;
+	public List<string> complications;
 	public List<string> currentMedicines;
 	public List<string> previousDosages;
 	public List<string> prescriptions;

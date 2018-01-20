@@ -44,5 +44,13 @@ public class MedicalAppDataManager : MonoBehaviour {
 	public void LoadAppData(MedicalAppData _loadedData)
 	{
 		medicalAppData = _loadedData;
+
+		Debug.Log("Er zijn " + medicalAppData.mPatients.Count + " patienten");
+		Debug.Log(medicalAppData.mPatients[0].fullName);
+		Debug.Log("Er zijn " + medicalAppData.mMedicines.Count + " medicijnen");
+		Debug.Log("Er zijn " + medicalAppData.mCabinets.Count + " cabinets");
+		Debug.Log("Er zijn " + medicalAppData.mDrawers.Count + " drawers");
+		Debug.Log("Er zijn " + medicalAppData.mTools.Count + " tools");
+		Debug.Log("Er zijn " + medicalAppData.mScenarios.Count + " scenarios");
 	}
 }

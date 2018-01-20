@@ -24,7 +24,7 @@ public class Scenario  {
     public int mPatientID;
     public int mCabinetID;
     public int mMedicineID;
-    public int mDeliveryMethod;
+    public int mDeliveryTool;
 
     public Scenario()
     {
@@ -33,7 +33,7 @@ public class Scenario  {
         mPatientID = 0;
         mCabinetID = 0;
         mMedicineID = 0;
-        mDeliveryMethod = 0;
+        mDeliveryTool = 0;
     }
 
    

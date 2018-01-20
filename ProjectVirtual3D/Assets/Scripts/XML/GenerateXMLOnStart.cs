@@ -19,21 +19,22 @@ public class GenerateXMLOnStart : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        //Write XML
+#region XMLOldTest
+		 //Write XML
 		//Add Patients
-        medi.mPatients.Add(new Patient(1, "Stijn", "Getteman", 26, 64, Sex.male, PatientType.adult, new List<string>() { "Value 1", "Value 2" },
+      /*  medi.mPatients.Add(new Patient(0, "Stijn", "Getteman", 26, 64, Sex.male, PatientType.adult, new List<string>() { "Value 1", "Value 2" },
 			new List<string>() { "Value 1", "Value 2","Value 1", "Value 2","Value 1", "Value 2","Value 1", "Value 2","Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" },
 			new List<string>() { "Value 1", "Value 2" }, new List<string>() { "Value 1", "Value 2" }));
 
-		medi.mPatients.Add(new Patient(2, "Robin", "Rikken", 22, 75, Sex.male, PatientType.adult, new List<string>() { "Value 3", "Value 4" },
+		medi.mPatients.Add(new Patient(1, "Robin", "Rikken", 22, 75, Sex.male, PatientType.adult, new List<string>() { "Value 3", "Value 4" },
 			new List<string>() { "Value 3", "Value 4" }, new List<string>() { "Value 3", "Value 4" },
 			new List<string>() { "Value 3", "Value 4" }, new List<string>() { "Value 3", "Value 4" }));
 
-		medi.mPatients.Add(new Patient(3, "Anne", "Mertens", 38, 70, Sex.female, PatientType.pregnant, new List<string>() { "Value 5", "Value 6" },
+		medi.mPatients.Add(new Patient(2, "Anne", "Mertens", 38, 70, Sex.female, PatientType.pregnant, new List<string>() { "Value 5", "Value 6" },
 			new List<string>() { "Value 5", "Value 6" }, new List<string>() { "Value 5", "Value 6" },
 			new List<string>() { "Value 5", "Value 6" }, new List<string>() { "Value 5", "Value 6" }));
 
-		medi.mPatients.Add(new Patient(4, "Sandra", "Claessens", 15, 40, Sex.female, PatientType.child, new List<string>() { "Value 7", "Value 8" },
+		medi.mPatients.Add(new Patient(3, "Sandra", "Claessens", 15, 40, Sex.female, PatientType.child, new List<string>() { "Value 7", "Value 8" },
 			new List<string>() { "Value 7", "Value 8" }, new List<string>() { "Value 7", "Value 8" },
 			new List<string>() { "Value 7", "Value 8" }, new List<string>() { "Value 7", "Value 8" }));
 
@@ -49,9 +50,9 @@ public class GenerateXMLOnStart : MonoBehaviour {
 
 
 
-        MedicalAppData.WriteToFile(ref medi, XMLFILE);
-
-        //Load XML
+        MedicalAppData.WriteToFile(ref medi, XMLFILE);*/
+#endregion
+		//Load XML
 		//We will use this instance manager to load all the data to it's respective managers
 		MedicalAppDataManager.instance.LoadAppData(readXml(XMLFILE));
 

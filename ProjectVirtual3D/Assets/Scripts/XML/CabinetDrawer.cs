@@ -9,19 +9,19 @@ using System.IO;
 
 public class CabinetDrawer
 {
-    [XmlAttribute]
-    public int mID;
-    public List<Medicine> mMedicines;
-    public List<DeliveryTool> mDeliveryTools;
-    public bool mIsLocked;
+	[XmlAttribute]
+	public int mID;
+	public List<int> mMedicines;
+	public List<int> mDeliveryTools;
+	public bool mIsLocked;
 
-    public CabinetDrawer()
-    {
-        mID = 0;
-        mMedicines = new List<Medicine>();
-        mDeliveryTools = new List<DeliveryTool>();
-        mIsLocked = false;
-    }
+	public CabinetDrawer()
+	{
+		mID = 0;
+		mMedicines = new List<int>();
+		mDeliveryTools = new List<int>();
+		mIsLocked = false;
+	}
 
 }
 

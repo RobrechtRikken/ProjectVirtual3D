@@ -22,15 +22,16 @@ public enum DeliveryMethod
 }*/
 
 
-public class DeliveryTool  {
+public class DeliveryTool
+{
 
-    [XmlAttribute]
-    public int mID;
-    public string mName;
+	[XmlAttribute]
+	public int mID;
+	public string mName;
 
-    public DeliveryTool()
-    {
-        mID = 0;
-        mName = "";
-    }
+	public DeliveryTool()
+	{
+		mID = 0;
+		mName = "";
+	}
 }
