@@ -7,48 +7,37 @@ using UnityEngine.UI;
 public class LoadMedicineList : MonoBehaviour
 {
 
-	public int patientAmount; //How many patients
-	[SerializeField] private List<string> patientList = new List<string>();
-	private string[] names = new string[] {"Dafalgan", "Amoxicilline", "Hydrochlorothiazide ", "Omeprazole", "Lisinopril ","Simvastatine"};
-	private string[] grams = new string[] { "50mg", "100mg", "200mg", "500mg"};
+	private int medicineAmount; //How many patients
+	[SerializeField] private List<string> medicineList = new List<string>();
 	public Transform MedicnineListTransform;
 	public GameObject prefabMedicinePanel;
 
-	public List<string> PatientList
+	public List<string> MedicineList
 	{
-		get { return patientList; }
+		get { return medicineList; }
 	}
+
 
 	// Use this for initialization
-	void Start ()
+	void Start()
 	{
-		string newName = "";
-		for (int i = 0; i < patientAmount; i++)
-		{
-			newName = RandomName();
-			if (patientList.Contains(newName))
-			{
-				newName = RandomName();
-			}
-			patientList.Add(newName);
-			AddRow(newName);
-		}
-
+		LoadMedicines();
 	}
 
-	string RandomName()
-	{
-		return names[(int)Random.Range(0f, 5f)] + " " + grams[(int) Random.Range(0f, 3f)];
-	}
-
-	void AddRow(string _namePatient)
+	void AddRow(string _nameMedicine)
 	{
 		//Instantiate(prefabPatientPanel, patientListTransform.transform.position, patientListTransform.transform.rotation);
+		GameObject newRow = Instantiate(prefabMedicinePanel, MedicnineListTransform);
+		newRow.transform.GetChild(0).GetComponent<Text>().text = _nameMedicine;
+	}
 
-
-		GameObject newRow = Instantiate(prefabMedicinePanel,MedicnineListTransform);
-		newRow.transform.GetChild(0).GetComponent<Text>().text = _namePatient;
-
+	void LoadMedicines()
+	{
+		//Hardcoding some patient here -- load data from XML and make a Patient instance out of them
+		foreach (Medicine medicine in MedicalAppDataManager.instance.MedicalAppData.mMedicines)
+		{
+			AddRow(medicine.mName + " - " + medicine.mQuantity + medicine.mUnit);
+		}
 
 	}
 }
