@@ -7,11 +7,18 @@ public class MedicalAppDataManager : MonoBehaviour {
 	// Use this for initialization
 	public static MedicalAppDataManager instance = null;
 	private MedicalAppData medicalAppData;
+	private Scenario scenario; //holds the scenario info
 
 	public MedicalAppData MedicalAppData
 	{
 		get { return medicalAppData; }
 	}
+
+	public Scenario Scenario
+	{
+		get { return scenario; }
+	}
+
 
 	void Awake()
 	{
@@ -45,12 +52,11 @@ public class MedicalAppDataManager : MonoBehaviour {
 	{
 		medicalAppData = _loadedData;
 
-		Debug.Log("Er zijn " + medicalAppData.mPatients.Count + " patienten");
-		Debug.Log(medicalAppData.mPatients[0].fullName);
-		Debug.Log("Er zijn " + medicalAppData.mMedicines.Count + " medicijnen");
-		Debug.Log("Er zijn " + medicalAppData.mCabinets.Count + " cabinets");
-		Debug.Log("Er zijn " + medicalAppData.mDrawers.Count + " drawers");
-		Debug.Log("Er zijn " + medicalAppData.mTools.Count + " tools");
-		Debug.Log("Er zijn " + medicalAppData.mScenarios.Count + " scenarios");
+		int randomScenario = Random.Range(0, medicalAppData.mScenarios.Count);
+		scenario = medicalAppData.mScenarios[randomScenario];
+		Debug.Log("Your scenario is " + scenario.mName);//scenario name
+		Debug.Log("Your patient is " + medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).fullName);//find the patient name from the scenario
+		Debug.Log("Your medicine is " + medicalAppData.mMedicines.Find(o=> o.mID == scenario.mMedicineID).mName);//find the medicine name from the scenario
+		
 	}
 }
