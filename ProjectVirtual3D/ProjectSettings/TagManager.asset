@@ -45,6 +45,18 @@ TagManager:
   - Trigger_Mouth
   - MedicineBottle
   - Dissolve
+  - Cabinet0
+  - Cabinet1
+  - Cabinet2
+  - Cabinet3
+  - Cabinet4
+  - Drawer0
+  - Drawer1
+  - Drawer2
+  - Drawer3
+  - Drawer4
+  - Drawer5
+  - Drawer6
   layers:
   - Default
   - TransparentFX
