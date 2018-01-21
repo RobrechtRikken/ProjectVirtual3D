@@ -9,6 +9,11 @@ public class MedicalAppDataManager : MonoBehaviour {
 	private MedicalAppData medicalAppData;
 	private Scenario scenario; //holds the scenario info
 
+	public GameObject goPatientSenior;
+	public GameObject goPatientAdult;
+	public GameObject goPatientPregnant;
+	public GameObject goPatientChild;
+
 	public MedicalAppData MedicalAppData
 	{
 		get { return medicalAppData; }
@@ -57,6 +62,29 @@ public class MedicalAppDataManager : MonoBehaviour {
 		Debug.Log("Your scenario is " + scenario.mName);//scenario name
 		Debug.Log("Your patient is " + medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).fullName);//find the patient name from the scenario
 		Debug.Log("Your medicine is " + medicalAppData.mMedicines.Find(o=> o.mID == scenario.mMedicineID).mName);//find the medicine name from the scenario
-		
+
+
+		ActivatePatient(medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).patientType);
+
+	}
+
+	void ActivatePatient(PatientType type)
+	{
+		switch (type)
+		{
+				case PatientType.senior:
+				goPatientSenior.SetActive(true);
+				break;
+			case PatientType.adult:
+				goPatientAdult.SetActive(true);
+				break;
+			case PatientType.child:
+				goPatientChild.SetActive(true);
+				break;
+			case PatientType.pregnant:
+				goPatientPregnant.SetActive(true);
+				break;
+
+		}
 	}
 }
