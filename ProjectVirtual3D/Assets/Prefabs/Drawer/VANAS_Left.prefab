@@ -2484,8 +2484,8 @@ GameObject:
   - component: {fileID: 33995033215823902}
   - component: {fileID: 23119570118912908}
   m_Layer: 0
-  m_Name: VANAS_CABINET
-  m_TagString: Untagged
+  m_Name: Cabinet0
+  m_TagString: Cabinet0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7868,14 +7868,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792239429559062}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.807, y: 0.88799995, z: 4.815}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.7360382, y: 0.18857956, z: 3.1877995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4844470482655196}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4069237558531234
 Transform:
   m_ObjectHideFlags: 1

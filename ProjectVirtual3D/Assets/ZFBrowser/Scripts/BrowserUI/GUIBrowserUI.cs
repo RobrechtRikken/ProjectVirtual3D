@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using VRTK;
 
 namespace ZenFulcrum.EmbeddedBrowser {
 
@@ -98,6 +99,7 @@ public class GUIBrowserUI :
 				if (Input.GetMouseButton(0)) buttons |= MouseButton.Left;
 				if (Input.GetMouseButton(1)) buttons |= MouseButton.Right;
 				if (Input.GetMouseButton(2)) buttons |= MouseButton.Middle;
+
 				MouseButtons = buttons;
 
 
