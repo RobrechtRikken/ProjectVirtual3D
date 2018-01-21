@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MedicalAppDataManager : MonoBehaviour {
 
@@ -13,6 +14,14 @@ public class MedicalAppDataManager : MonoBehaviour {
 	public GameObject goPatientAdult;
 	public GameObject goPatientPregnant;
 	public GameObject goPatientChild;
+
+
+	public Text firstNameText;
+	public Text lastNameText;
+	public Text ageText;
+	public Text sexText;
+	public Text weightText;
+	public Text medicineText;
 
 	public MedicalAppData MedicalAppData
 	{
@@ -63,7 +72,7 @@ public class MedicalAppDataManager : MonoBehaviour {
 		Debug.Log("Your patient is " + medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).fullName);//find the patient name from the scenario
 		Debug.Log("Your medicine is " + medicalAppData.mMedicines.Find(o=> o.mID == scenario.mMedicineID).mName);//find the medicine name from the scenario
 
-
+		SetKlembordUI();
 		ActivatePatient(medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).patientType);
 
 	}
@@ -86,5 +95,16 @@ public class MedicalAppDataManager : MonoBehaviour {
 				break;
 
 		}
+	}
+
+	void SetKlembordUI()
+	{
+		firstNameText.text = medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).firstName;
+		lastNameText.text = medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).lastName;
+		ageText.text = medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).age.ToString();
+		sexText.text = medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).sex.ToString();
+		weightText.text = medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).weight.ToString() + " kg";
+
+		medicineText.text = medicalAppData.mMedicines.Find(o => o.mID == scenario.mMedicineID).mName;
 	}
 }
