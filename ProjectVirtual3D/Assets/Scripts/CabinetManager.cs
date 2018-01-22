@@ -50,6 +50,8 @@ public class CabinetManager : MonoBehaviour {
 		{
 			for (int j = 0; j < amountOfDrawersInCAbinet; j++) 
 			{
+				drawerSlotList.Clear ();
+				Debug.Log ("SPAWNLOCATIONLIST CLEARED FOR NEXT DRAWER");
 				theCabinet = MedicalAppDataManager.instance.MedicalAppData.mCabinets[i];
 				if (j < theCabinet.mDrawers.Count) 
 				{
@@ -68,7 +70,6 @@ public class CabinetManager : MonoBehaviour {
 					} 
 					else 
 					{
-						drawerSlotList.Clear ();
 						//CREATE SPAWNLIST FOR THIS DRAWER ONCE
 						Transform[] allChildren =drawerArray[i,j].GetComponentsInChildren<Transform>();
 						foreach (Transform child in allChildren) 
@@ -77,17 +78,17 @@ public class CabinetManager : MonoBehaviour {
 							if (child.tag == drawerSlotTag) 
 							{
 								drawerSlotList.Add (child.gameObject);
-								//Debug.Log (child.name + " added to possible spawnlocationlist");
+								//Debug.Log (child.name + " added to possible spawnlocationlist    FOR CABINET " + cabinetList[i].name );
 							}
 						}
 
 						//There are medicines in this drawer
-						//Debug.Log ("Medicines are in the drawer || AMOUNT = " + theCabinetDrawer.mMedicines.Count);
+						Debug.Log ("Medicines are in the drawer || AMOUNT = " + theCabinetDrawer.mMedicines.Count);
 						foreach (int medicine in theCabinetDrawer.mMedicines) 
 						{
 							//Debug.Log (medicine + " = Id of medicine in drawer");
 							int randomPos = Random.Range (0, drawerSlotList.Count);
-							Debug.Log("RANDOM = " + randomPos + "   MAX = " + drawerSlotList.Count);
+							//Debug.Log("RANDOM = " + randomPos + "   MAX = " + drawerSlotList.Count);
 							GameObject newMedicine = Instantiate(medicineList[medicine], drawerSlotList [randomPos].transform.position, Quaternion.identity);
 							Debug.Log (newMedicine + " Spawned in position " + drawerSlotList[randomPos].name);
 							drawerSlotList.RemoveAt(randomPos);
