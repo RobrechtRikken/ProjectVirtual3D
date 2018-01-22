@@ -73,6 +73,7 @@ public class MedicalAppDataManager : MonoBehaviour {
 		Debug.Log("Your patient is " + medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).fullName);//find the patient name from the scenario
 		Debug.Log("Your medicine is " + medicalAppData.mMedicines.Find(o=> o.mID == scenario.mMedicineID).mName);//find the medicine name from the scenario
 
+
 		SetKlembordUI();
 		ActivatePatient(medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).patientType);
 		deManager.InitiateVanas ();
