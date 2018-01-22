@@ -22,6 +22,7 @@ public class MedicalAppDataManager : MonoBehaviour {
 	public Text sexText;
 	public Text weightText;
 	public Text medicineText;
+	public CabinetManager deManager;
 
 	public MedicalAppData MedicalAppData
 	{
@@ -74,7 +75,7 @@ public class MedicalAppDataManager : MonoBehaviour {
 
 		SetKlembordUI();
 		ActivatePatient(medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).patientType);
-
+		deManager.InitiateVanas ();
 	}
 
 	void ActivatePatient(PatientType type)
