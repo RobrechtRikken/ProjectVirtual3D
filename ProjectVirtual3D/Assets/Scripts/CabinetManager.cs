@@ -51,8 +51,10 @@ public class CabinetManager : MonoBehaviour {
 			for (int j = 0; j < amountOfDrawersInCAbinet; j++) 
 			{
 				theCabinet = MedicalAppDataManager.instance.MedicalAppData.mCabinets[i];
-				Debug.Log (theCabinet.mDrawers.Count);
-				cabinetDrawerId = theCabinet.mDrawers[j];
+				if (j < theCabinet.mDrawers.Count) 
+				{
+					cabinetDrawerId = theCabinet.mDrawers[j];
+				}
 				CabinetDrawer theCabinetDrawer = MedicalAppDataManager.instance.MedicalAppData.mDrawers.Find (o => o.mID == cabinetDrawerId); 
 				if (theCabinetDrawer == null) {
 					//Drawer is empty , next drawer
@@ -66,6 +68,7 @@ public class CabinetManager : MonoBehaviour {
 					} 
 					else 
 					{
+						drawerSlotList.Clear ();
 						//CREATE SPAWNLIST FOR THIS DRAWER ONCE
 						Transform[] allChildren =drawerArray[i,j].GetComponentsInChildren<Transform>();
 						foreach (Transform child in allChildren) 
@@ -84,6 +87,7 @@ public class CabinetManager : MonoBehaviour {
 						{
 							//Debug.Log (medicine + " = Id of medicine in drawer");
 							int randomPos = Random.Range (0, drawerSlotList.Count);
+							Debug.Log("RANDOM = " + randomPos + "   MAX = " + drawerSlotList.Count);
 							GameObject newMedicine = Instantiate(medicineList[medicine], drawerSlotList [randomPos].transform.position, Quaternion.identity);
 							Debug.Log (newMedicine + " Spawned in position " + drawerSlotList[randomPos].name);
 							drawerSlotList.RemoveAt(randomPos);
