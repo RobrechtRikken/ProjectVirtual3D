@@ -18,7 +18,12 @@ public class CabinetManager : MonoBehaviour {
 	public Cabinet theCabinet;
 	// Use this for initialization
 	void Start () 
-	{	//INITIALISE DRAWER ARRAY
+	{	
+	}
+
+	public void InitiateCAbinets()
+	{
+		//INITIALISE DRAWER ARRAY
 		drawerArray = new GameObject[amountOfCabinets,amountOfDrawersInCAbinet];
 		//Gets all cabinets in the scene and adds them to this list
 		for (int i = 0; i < amountOfCabinets; i++) 
@@ -41,22 +46,22 @@ public class CabinetManager : MonoBehaviour {
 		//Debug.Log ("All drawers added to array");
 	}
 
-
 	public void InitiateVanas()
 	{
 		Debug.Log ("INITIATING VANAS");
 		//Get all the medicine from the XML file into the VANAS
 		for (int i = 0; i < amountOfCabinets; i++) 
 		{
-			for (int j = 0; j < amountOfDrawersInCAbinet; j++) 
+			theCabinet = MedicalAppDataManager.instance.MedicalAppData.mCabinets[i];
+
+			for (int j = 0; j < theCabinet.mDrawers.Count; j++) 
 			{
-				drawerSlotList.Clear ();
+				drawerSlotList.Clear (); //==> Declare here
 				Debug.Log ("SPAWNLOCATIONLIST CLEARED FOR NEXT DRAWER");
-				theCabinet = MedicalAppDataManager.instance.MedicalAppData.mCabinets[i];
-				if (j < theCabinet.mDrawers.Count) 
-				{
-					cabinetDrawerId = theCabinet.mDrawers[j];
-				}
+
+				//if (j < theCabinet.mDrawers.Count) {
+					cabinetDrawerId = theCabinet.mDrawers [j];
+				//}
 				CabinetDrawer theCabinetDrawer = MedicalAppDataManager.instance.MedicalAppData.mDrawers.Find (o => o.mID == cabinetDrawerId); 
 				if (theCabinetDrawer == null) {
 					//Drawer is empty , next drawer
@@ -64,14 +69,10 @@ public class CabinetManager : MonoBehaviour {
 				} 
 				else 
 				{
-					if (theCabinetDrawer.mMedicines.Count == 0) {
-						//Do nothing , move on tho next drawer
-					//	Debug.Log ("Drawer empty next drawer");
-					} 
-					else 
+					if (theCabinetDrawer.mMedicines.Count != 0)
 					{
 						//CREATE SPAWNLIST FOR THIS DRAWER ONCE
-						Transform[] allChildren =drawerArray[i,j].GetComponentsInChildren<Transform>();
+						Transform[] allChildren = drawerArray[i,j].GetComponentsInChildren<Transform>();
 						foreach (Transform child in allChildren) 
 						{
 						//	Debug.Log ("the child we are checking for a slotTag is : " + child.name);

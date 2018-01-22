@@ -75,6 +75,7 @@ public class MedicalAppDataManager : MonoBehaviour {
 
 		SetKlembordUI();
 		ActivatePatient(medicalAppData.mPatients.Find(o => o.patientID == scenario.mPatientID).patientType);
+		deManager.InitiateCAbinets ();
 		deManager.InitiateVanas ();
 	}
 
