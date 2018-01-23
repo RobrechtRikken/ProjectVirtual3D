@@ -17,6 +17,7 @@ public class Syringe : MonoBehaviour {
 	public float errorShowTime = 5f;
 	private string overflowError = "Amount too large for this syringe";
 	public MedicineBottle bottleScript;
+	public string containedMedicineLiquid;
 	private Collider latestCollider;
 	private string syringeTooltipText;
 	private string injectText = "Inject ";
@@ -253,6 +254,7 @@ public class Syringe : MonoBehaviour {
 	{
 		SoundManager.instance.PlaySound("Ping");
 		MedicalAppDataManager.instance.AddUserChoice("User filled syringe with a " + medicineParent + "  liquid");
+		containedMedicineLiquid = medicineParent;
 		amountInSyringe += +bottleScript.selectedAmount;
 		UpdateTooltip ();
 		syringeTooltip.UpdateText (syringeTooltipText);
@@ -277,7 +279,7 @@ public class Syringe : MonoBehaviour {
 		{
 			if (gameObject.tag == "Syringe" && !currentCollidingObject.gameObject.name.Contains("Mond"))
 			{
-				amountInSyringe = 0;
+				amountInSyringe = 0; //Destroy pill
 				ShowinjectionCompletionTooltip("succes");
 			}
 			else
@@ -331,13 +333,13 @@ public class Syringe : MonoBehaviour {
 				syringeTooltip.containerColor = goodColor;
 				syringeTooltip.UpdateText(succesfullInjectionMessage + newToolTipNameText);
 				SoundManager.instance.PlaySound("Succes");
-				MedicalAppDataManager.instance.AddUserChoice("User succesfully injected medicine into " + newToolTipNameText);
+			MedicalAppDataManager.instance.AddUserChoice("User succesfully injected medicine from " +  containedMedicineLiquid + " into " + newToolTipNameText);
 				break;
 			case "wrong":
 				syringeTooltip.containerColor = faultColor;
 				syringeTooltip.UpdateText("Wrong injection point");
 				SoundManager.instance.PlaySound("Wrong");
-				MedicalAppDataManager.instance.AddUserChoice("User wrongfully injected medicine into " + newToolTipNameText);
+			MedicalAppDataManager.instance.AddUserChoice("User wrongfully injected medicine  " +  containedMedicineLiquid + " into " + newToolTipNameText);
 				break;
 
 		}

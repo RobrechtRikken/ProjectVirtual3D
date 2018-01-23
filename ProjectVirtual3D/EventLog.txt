@@ -1,0 +1,9 @@
+New Session:
+1/24/2018 12:54:27 AM: User scanned badge and accessed the VANAS UI
+1/24/2018 12:54:30 AM: User selected patient Mieke Janssens
+1/24/2018 12:54:32 AM: User is selecting another medicine
+1/24/2018 12:54:36 AM: User selected medicine Metoclopramide - 2ml
+1/24/2018 12:55:03 AM: User filled syringe with a Bottle_Metoclopramide(Clone)  liquid
+1/24/2018 12:55:18 AM: User wrongfully injected medicine  Bottle_Metoclopramide(Clone) into Mond
+1/24/2018 12:55:26 AM: User succesfully injected medicine from Bottle_Metoclopramide(Clone) into Left Lower Thigh (1)
+---------------------------------------------------

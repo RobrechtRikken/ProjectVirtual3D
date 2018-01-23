@@ -109,13 +109,6 @@
       <mPackage>bottle</mPackage>
       <mPointsOfAttention />
     </Medicine>
-	 <Medicine mID="7">
-      <mName>NaCl</mName>
-      <mQuantity>20</mQuantity>
-      <mUnit>ml</mUnit>
-      <mPackage>bottle</mPackage>
-      <mPointsOfAttention />
-    </Medicine>
 	 <Medicine mID="8">
       <mName>BAXTER</mName>
       <mQuantity>100</mQuantity>
@@ -193,7 +186,6 @@
 	 <CabinetDrawer mID="5">
       <mMedicines>
 	  <int>6</int>
-	  <int>7</int>
       </mMedicines>
       <mDeliveryTools>
       </mDeliveryTools>
@@ -239,30 +231,9 @@
     </Cabinet>
   </mCabinets>
   <mScenarios>
-  <Scenario mID="0">
-      <mName>Patient 1</mName>
-      <mPatientID>0</mPatientID>
-      <mCabinetID>0</mCabinetID>
-      <mMedicineID>3</mMedicineID>
-      <mDeliveryTool>0</mDeliveryTool>
-    </Scenario>
-	 <Scenario mID="1">
-      <mName>Patient 2</mName>
-      <mPatientID>1</mPatientID>
-      <mCabinetID>0</mCabinetID>
-      <mMedicineID>1</mMedicineID>
-      <mDeliveryTool>4</mDeliveryTool>
-    </Scenario>
-	 <Scenario mID="2">
-      <mName>Patient 3</mName>
-      <mPatientID>2</mPatientID>
-      <mCabinetID>2</mCabinetID>
-      <mMedicineID>4</mMedicineID>
-      <mDeliveryTool>1</mDeliveryTool>
-    </Scenario>
 	 <Scenario mID="3">
       <mName>Patient 4</mName>
-      <mPatientID>3</mPatientID>
+      <mPatientID>0</mPatientID>
       <mCabinetID>0</mCabinetID>
       <mMedicineID>2</mMedicineID>
       <mDeliveryTool>1</mDeliveryTool>
