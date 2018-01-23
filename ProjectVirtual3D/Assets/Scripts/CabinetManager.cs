@@ -129,23 +129,23 @@ public class CabinetManager : MonoBehaviour {
 		//Set drawerunlocked on true so no other drawers can be open at the same time
 		anyDrawerUnlocked = true;
 		//Get original postition and end poition for that drawer ready
-		Vector3 originalPosition = drawerArray [cabinetNumber, drawerNumber].transform.position;
+		Vector3 originalPosition = drawerArray [cabinetNumber, drawerNumber].transform.localPosition;
 		Vector3 endPosition = new Vector3 (drawerExtended, originalPosition.y, originalPosition.z);
 		if (animateDurationDrawer > 0f) 
 		{
 			float startTime = Time.time;
 			float endTime = startTime + animateDurationDrawer;
-			drawerArray [cabinetNumber, drawerNumber].transform.position = originalPosition;
+			drawerArray [cabinetNumber, drawerNumber].transform.localPosition = originalPosition;
 			yield return null;
 			while (Time.time < endTime) 
 			{
 				float progress = (Time.time - startTime) / animateDurationDrawer;
 				// progress will equal 0 at startTime, 1 at endTime.
-				drawerArray [cabinetNumber, drawerNumber].transform.position = Vector3.Lerp (originalPosition, endPosition, progress);
+				drawerArray [cabinetNumber, drawerNumber].transform.localPosition = Vector3.Lerp (originalPosition, endPosition, progress);
 				yield return null;
 			}
 		}
-		drawerArray [cabinetNumber, drawerNumber].transform.position = endPosition;
+		drawerArray [cabinetNumber, drawerNumber].transform.localPosition = endPosition;
 		//Drawer is now open and it will close again after durationToStayOpen;
 		yield return new WaitForSeconds (durationToStayOpen);
 		//RESET THE ANIMATEDURATIONDRAWER SO IT STARTS BACK AT ITS ORIGINAL TIME
@@ -155,17 +155,17 @@ public class CabinetManager : MonoBehaviour {
 		{
 			float startTime = Time.time;
 			float endTime = startTime + animateDurationDrawer;
-			drawerArray [cabinetNumber, drawerNumber].transform.position = endPosition;
+			drawerArray [cabinetNumber, drawerNumber].transform.localPosition = endPosition;
 			yield return null;
 			while (Time.time < endTime) 
 			{
 				float progress = (Time.time - startTime) / animateDurationDrawer;
 				// progress will equal 0 at startTime, 1 at endTime.
-				drawerArray [cabinetNumber, drawerNumber].transform.position = Vector3.Lerp (endPosition, originalPosition, progress);
+				drawerArray [cabinetNumber, drawerNumber].transform.localPosition = Vector3.Lerp (endPosition, originalPosition, progress);
 				yield return null;
 			}
 		}
-		drawerArray [cabinetNumber, drawerNumber].transform.position = endPosition;
+		drawerArray [cabinetNumber, drawerNumber].transform.localPosition = originalPosition;
 		anyDrawerUnlocked = false;
 	}
 
