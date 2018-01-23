@@ -57,6 +57,8 @@ TagManager:
   - Drawer4
   - Drawer5
   - Drawer6
+  - Pill
+  - Syringe
   layers:
   - Default
   - TransparentFX

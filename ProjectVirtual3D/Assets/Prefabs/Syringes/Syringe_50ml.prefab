@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 136285258663140618}
   m_Layer: 2
   m_Name: Syringe_50ml
-  m_TagString: Untagged
+  m_TagString: Syringe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
