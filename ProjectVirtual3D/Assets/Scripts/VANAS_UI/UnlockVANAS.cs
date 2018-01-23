@@ -25,7 +25,8 @@ public class UnlockVANAS : MonoBehaviour
 	public Material screenBaseColor;
 	public Material screenAccesDeniedColor;
 	public Material screenAccesGrantedColor;
-	
+
+	private bool alreadyOn = false;
 
 	public GameObject patientUI;
 
@@ -68,10 +69,15 @@ public class UnlockVANAS : MonoBehaviour
 	{
 		if (screen != null)
 		{
-			screen.GetComponent<MeshRenderer>().material = screenAccesGrantedColor;
-			patientUI.SetActive(true);
-			StartCoroutine(Blink(timeToBlink));
+			if (!alreadyOn)
+			{
+				SoundManager.instance.PlaySound("Scan");
+				screen.GetComponent<MeshRenderer>().material = screenAccesGrantedColor;
+				patientUI.SetActive(true);
+				StartCoroutine(Blink(timeToBlink));
+				alreadyOn = true;
 
+			}
 		}
 
 		//Activate script on door
@@ -86,6 +92,7 @@ public class UnlockVANAS : MonoBehaviour
 		if (screen != null)
 		{
 			screen.GetComponent<MeshRenderer>().material = screenBaseColor;
+			alreadyOn = false;
 		}
 	}
 

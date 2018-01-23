@@ -250,14 +250,14 @@ public class Syringe : MonoBehaviour {
 	public void Inject()
 	{
 		Debug.Log ("CURRENTLY INJECTING");
-		if (currentCollidingObject == null) 
+		if (currentCollidingObject == null || amountInSyringe == 0) 
 		{
 			Debug.Log ("Can't inject");
 		} 
 		else 
 		{
 			amountInSyringe = 0;
-			ShowinjectionCompletionTooltip ();
+			ShowinjectionCompletionTooltip();
 		}
 	}
 
@@ -269,6 +269,7 @@ public class Syringe : MonoBehaviour {
 
 	public void ShowInjectionToolTip(Collider col)
 	{
+		string newToolTipNameText;
 		//If the syringe is empty show an error message that you can't inject
 		if (amountInSyringe == 0) {
 			currentCollidingObject = col.gameObject;
@@ -278,7 +279,8 @@ public class Syringe : MonoBehaviour {
 		else 
 		{
 			currentCollidingObject = col.gameObject;
-			syringeTooltip.UpdateText (injectText + col.gameObject.name + "?");
+			newToolTipNameText = col.gameObject.name.Replace("_", " ");
+			syringeTooltip.UpdateText (injectText + newToolTipNameText + "?");
 			syringeTooltip.gameObject.SetActive (true);
 		}
 
@@ -294,7 +296,19 @@ public class Syringe : MonoBehaviour {
 	public void ShowinjectionCompletionTooltip()
 	{
 		//Depending on good or bad injection poitioning the tooltip will go green or red
-		syringeTooltip.containerColor = goodColor;
-		syringeTooltip.UpdateText (succesfullInjectionMessage + currentCollidingObject.name);
+
+		if (currentCollidingObject.name.Contains("Arm"))
+		{
+			syringeTooltip.containerColor = goodColor;
+			syringeTooltip.UpdateText(succesfullInjectionMessage + currentCollidingObject.name);
+			SoundManager.instance.PlaySound("Succes");
+		}
+		else
+		{
+			syringeTooltip.containerColor = faultColor;
+			syringeTooltip.UpdateText("Can't inject this here");
+			SoundManager.instance.PlaySound("Wrong");
+		}
+	
 	}
 }
