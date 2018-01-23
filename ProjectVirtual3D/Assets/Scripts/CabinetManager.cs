@@ -95,7 +95,7 @@ public class CabinetManager : MonoBehaviour {
 							//Debug.Log (medicine + " = Id of medicine in drawer");
 							int randomPos = Random.Range (0, drawerSlotList.Count);
 							//Debug.Log("RANDOM = " + randomPos + "   MAX = " + drawerSlotList.Count);
-							GameObject newMedicine = Instantiate(medicineList[medicine], drawerSlotList [randomPos].transform.position, Quaternion.identity);
+							GameObject newMedicine = Instantiate(medicineList[medicine], drawerSlotList [randomPos].transform.position, Quaternion.identity, drawerSlotList[randomPos].transform);
 							Debug.Log (newMedicine + " Spawned in position " + drawerSlotList[randomPos].name);
 							drawerSlotList.RemoveAt(randomPos);
 

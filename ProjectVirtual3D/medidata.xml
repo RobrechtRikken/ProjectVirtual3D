@@ -117,7 +117,7 @@
       <mPointsOfAttention />
     </Medicine>
 	 <Medicine mID="8">
-      <mName>NaClBAXTER</mName>
+      <mName>BAXTER</mName>
       <mQuantity>100</mQuantity>
       <mUnit>ml</mUnit>
       <mPackage>baxter</mPackage>

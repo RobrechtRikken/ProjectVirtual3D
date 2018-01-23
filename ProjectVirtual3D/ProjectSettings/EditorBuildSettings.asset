@@ -14,9 +14,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Sprint3.unity
     guid: 09d34bb18026cac4a91d7b90bfd24018
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sprint4.unity
     guid: c794a44e904bdea42b2d7c474a4011c6
   - enabled: 0
     path: Assets/VRTK/Examples/025_Controls_Overview.unity
     guid: b62e5ac17f705524cad1b16219dba697
+  - enabled: 1
+    path: Assets/Scenes/Sprint5.unity
+    guid: 63a840bbf05f7be40bf3b85089eb4d85
