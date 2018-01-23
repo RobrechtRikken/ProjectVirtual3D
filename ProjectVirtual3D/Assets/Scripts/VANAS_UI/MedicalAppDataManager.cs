@@ -38,6 +38,12 @@ public class MedicalAppDataManager : MonoBehaviour {
 		get { return scenario; }
 	}
 
+	public void AddUserChoice(string choice)
+	{
+		Debug.Log("Adding to text file: " + System.DateTime.Now + ": " + choice);
+		userChoices.Add(System.DateTime.Now + ": " + choice);
+	}
+
 
 	void Awake()
 	{
@@ -77,10 +83,13 @@ public class MedicalAppDataManager : MonoBehaviour {
 		//Write some text to the test.txt file
 		StreamWriter writer = new StreamWriter(path, true);
 
+		writer.WriteLine("New Session:");
 		foreach (string text in userChoices)
 		{
 			writer.WriteLine(text);
 		}
+
+		writer.WriteLine("---------------------------------------------------");
 		
 		writer.Close();
 

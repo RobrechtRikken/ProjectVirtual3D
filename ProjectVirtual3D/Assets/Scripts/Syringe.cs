@@ -252,7 +252,7 @@ public class Syringe : MonoBehaviour {
 	public IEnumerator SyringeFill(string medicineParent)
 	{
 		SoundManager.instance.PlaySound("Ping");
-		MedicalAppDataManager.instance.userChoices.Add("User filled syringe with a " + medicineParent + "  liquid");
+		MedicalAppDataManager.instance.AddUserChoice("User filled syringe with a " + medicineParent + "  liquid");
 		amountInSyringe += +bottleScript.selectedAmount;
 		UpdateTooltip ();
 		syringeTooltip.UpdateText (syringeTooltipText);
@@ -331,13 +331,13 @@ public class Syringe : MonoBehaviour {
 				syringeTooltip.containerColor = goodColor;
 				syringeTooltip.UpdateText(succesfullInjectionMessage + newToolTipNameText);
 				SoundManager.instance.PlaySound("Succes");
-				MedicalAppDataManager.instance.userChoices.Add("User succesfully injected medicine into " + newToolTipNameText);
+				MedicalAppDataManager.instance.AddUserChoice("User succesfully injected medicine into " + newToolTipNameText);
 				break;
 			case "wrong":
 				syringeTooltip.containerColor = faultColor;
 				syringeTooltip.UpdateText("Wrong injection point");
 				SoundManager.instance.PlaySound("Wrong");
-				MedicalAppDataManager.instance.userChoices.Add("User wrongfully injected medicine into " + newToolTipNameText);
+				MedicalAppDataManager.instance.AddUserChoice("User wrongfully injected medicine into " + newToolTipNameText);
 				break;
 
 		}
