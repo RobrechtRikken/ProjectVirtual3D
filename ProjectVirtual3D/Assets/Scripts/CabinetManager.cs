@@ -16,9 +16,19 @@ public class CabinetManager : MonoBehaviour {
 	public List<GameObject> drawerSlotList = new List<GameObject>();
 	public int cabinetDrawerId;
 	public Cabinet theCabinet;
+	public Vector3 drawerStartPosition;
+	public float drawerExtendPosition = -0.720f;
+	public float drawerGreyExtendPosition = -0.24f;
+	public float animateDuration = 2;
+	public float amountOfTimeBeforeClose = 15;
 	// Use this for initialization
 	void Start () 
-	{	//INITIALISE DRAWER ARRAY
+	{	
+	}
+
+	public void InitiateCAbinets()
+	{
+		//INITIALISE DRAWER ARRAY
 		drawerArray = new GameObject[amountOfCabinets,amountOfDrawersInCAbinet];
 		//Gets all cabinets in the scene and adds them to this list
 		for (int i = 0; i < amountOfCabinets; i++) 
@@ -41,22 +51,22 @@ public class CabinetManager : MonoBehaviour {
 		//Debug.Log ("All drawers added to array");
 	}
 
-
 	public void InitiateVanas()
 	{
 		Debug.Log ("INITIATING VANAS");
 		//Get all the medicine from the XML file into the VANAS
 		for (int i = 0; i < amountOfCabinets; i++) 
 		{
-			for (int j = 0; j < amountOfDrawersInCAbinet; j++) 
+			theCabinet = MedicalAppDataManager.instance.MedicalAppData.mCabinets[i];
+
+			for (int j = 0; j < theCabinet.mDrawers.Count; j++) 
 			{
-				drawerSlotList.Clear ();
+				drawerSlotList.Clear (); //==> Declare here
 				Debug.Log ("SPAWNLOCATIONLIST CLEARED FOR NEXT DRAWER");
-				theCabinet = MedicalAppDataManager.instance.MedicalAppData.mCabinets[i];
-				if (j < theCabinet.mDrawers.Count) 
-				{
-					cabinetDrawerId = theCabinet.mDrawers[j];
-				}
+
+				//if (j < theCabinet.mDrawers.Count) {
+					cabinetDrawerId = theCabinet.mDrawers [j];
+				//}
 				CabinetDrawer theCabinetDrawer = MedicalAppDataManager.instance.MedicalAppData.mDrawers.Find (o => o.mID == cabinetDrawerId); 
 				if (theCabinetDrawer == null) {
 					//Drawer is empty , next drawer
@@ -64,14 +74,10 @@ public class CabinetManager : MonoBehaviour {
 				} 
 				else 
 				{
-					if (theCabinetDrawer.mMedicines.Count == 0) {
-						//Do nothing , move on tho next drawer
-					//	Debug.Log ("Drawer empty next drawer");
-					} 
-					else 
+					if (theCabinetDrawer.mMedicines.Count != 0)
 					{
 						//CREATE SPAWNLIST FOR THIS DRAWER ONCE
-						Transform[] allChildren =drawerArray[i,j].GetComponentsInChildren<Transform>();
+						Transform[] allChildren = drawerArray[i,j].GetComponentsInChildren<Transform>();
 						foreach (Transform child in allChildren) 
 						{
 						//	Debug.Log ("the child we are checking for a slotTag is : " + child.name);
@@ -98,6 +104,69 @@ public class CabinetManager : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	public void OpenDrawer(int cabinetNumber, int drawerNumber)
+	{
+		if (!anyDrawerUnlocked) 
+		{
+			//Check if cabinetnumber is 1, 2, 3 ==> Small cabinet so use drawerGreyExtendedPosition
+			if (cabinetNumber == 1 || cabinetNumber == 2 || cabinetNumber == 3) 
+			{
+				//Start coroutine with the correct cabinet and GREY start position
+				StartCoroutine(AnimateDrawer(cabinetNumber, drawerNumber, drawerGreyExtendPosition,animateDuration, amountOfTimeBeforeClose));
+			} 
+			else 
+			{
+				//Start coroutine with normal extendedposition
+				StartCoroutine(AnimateDrawer(cabinetNumber, drawerNumber, drawerExtendPosition,animateDuration, amountOfTimeBeforeClose));
+			}
+		}
+	}
+
+	public IEnumerator AnimateDrawer(int cabinetNumber, int drawerNumber,float drawerExtended, float animateDurationDrawer, float durationToStayOpen)
+	{
+		//Set drawerunlocked on true so no other drawers can be open at the same time
+		anyDrawerUnlocked = true;
+		//Get original postition and end poition for that drawer ready
+		Vector3 originalPosition = drawerArray [cabinetNumber, drawerNumber].transform.localPosition;
+		Vector3 endPosition = new Vector3 (drawerExtended, originalPosition.y, originalPosition.z);
+		if (animateDurationDrawer > 0f) 
+		{
+			float startTime = Time.time;
+			float endTime = startTime + animateDurationDrawer;
+			drawerArray [cabinetNumber, drawerNumber].transform.localPosition = originalPosition;
+			yield return null;
+			while (Time.time < endTime) 
+			{
+				float progress = (Time.time - startTime) / animateDurationDrawer;
+				// progress will equal 0 at startTime, 1 at endTime.
+				drawerArray [cabinetNumber, drawerNumber].transform.localPosition = Vector3.Lerp (originalPosition, endPosition, progress);
+				yield return null;
+			}
+		}
+		drawerArray [cabinetNumber, drawerNumber].transform.localPosition = endPosition;
+		//Drawer is now open and it will close again after durationToStayOpen;
+		yield return new WaitForSeconds (durationToStayOpen);
+		//RESET THE ANIMATEDURATIONDRAWER SO IT STARTS BACK AT ITS ORIGINAL TIME
+		animateDurationDrawer = animateDuration;
+		//Drawer will now close again
+		if (animateDurationDrawer > 0f) 
+		{
+			float startTime = Time.time;
+			float endTime = startTime + animateDurationDrawer;
+			drawerArray [cabinetNumber, drawerNumber].transform.localPosition = endPosition;
+			yield return null;
+			while (Time.time < endTime) 
+			{
+				float progress = (Time.time - startTime) / animateDurationDrawer;
+				// progress will equal 0 at startTime, 1 at endTime.
+				drawerArray [cabinetNumber, drawerNumber].transform.localPosition = Vector3.Lerp (endPosition, originalPosition, progress);
+				yield return null;
+			}
+		}
+		drawerArray [cabinetNumber, drawerNumber].transform.localPosition = originalPosition;
+		anyDrawerUnlocked = false;
 	}
 
 }
