@@ -69,13 +69,14 @@ public class PatientManager : MonoBehaviour {
 			hasSelectedPatient = true;
 			SetPatientInfo ();
 			Debug.Log (selectedPatient);
+			MedicalAppDataManager.instance.userChoices.Add("User selected patient " + selectedPatient);
 			StartCoroutine (SetPatientCo ());
 		}
 	}
 
-	public void SetSelectedMedicine()
+	public void SetSelectedMedicine(string _selectedMedicine)
 	{
-		StartCoroutine(UnlockDrawer());
+		StartCoroutine(UnlockDrawer(_selectedMedicine));
 	}
 
 	public void SelectAnotherMedicine()
@@ -100,11 +101,13 @@ public class PatientManager : MonoBehaviour {
 		medicijnText.text = "";
 	}
 
-	public IEnumerator UnlockDrawer()
+	//This gets called when we click on a medicine name
+	public IEnumerator UnlockDrawer(string _selectedMedicine)
 	{
 		//if no drawer unlocked we wait for x seconds, then we unlock the drawer with the given medicine
 		//if drawer is already unlocked return
 
+		MedicalAppDataManager.instance.userChoices.Add("User selected medicine " + _selectedMedicine);
 		Debug.Log("Unlock Drawer");
 		yield return new WaitForSeconds(1f);
 		//code to unlock drawer
@@ -117,7 +120,8 @@ public class PatientManager : MonoBehaviour {
 	public IEnumerator AnotherMedicine()
 	{
 		//drawManager.Reset();
-		Debug.Log("SELECT PATIENT");
+		Debug.Log("SELECT ANOTHER MEDICINE");
+		MedicalAppDataManager.instance.userChoices.Add("User is selecting another medicine");
 		yield return new WaitForSeconds(1f);
 		newMedicineUI.SetActive(false);
 		patientInfoUI.SetActive(false);
@@ -130,6 +134,7 @@ public class PatientManager : MonoBehaviour {
 	public void AnotherPatient()
 	{
 		//drawManager.Reset();
+		MedicalAppDataManager.instance.userChoices.Add("User is selecting a new patient");
 		selectedPatient = "";
 		hasSelectedPatient = false;
 		medicijnText.text = "";
@@ -149,7 +154,7 @@ public class PatientManager : MonoBehaviour {
 	public IEnumerator ExitVanas()
 	{
 		drawManager.Reset();
-		Debug.Log("SELECT PATIENT");
+		Debug.Log("EXIT VANAS");
 		yield return new WaitForSeconds(1f);
 		patientText.text = "";
 		medicijnText.text = "";
@@ -159,6 +164,7 @@ public class PatientManager : MonoBehaviour {
 		patientInfoUI.SetActive(false);
 		patientUI.SetActive(true);
 		vanasUI.SetActive (false);
+		MedicalAppDataManager.instance.userChoices.Add("User closed the VANAS UI");
 
 
 	}

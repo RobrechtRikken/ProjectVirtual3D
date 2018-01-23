@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +25,8 @@ public class MedicalAppDataManager : MonoBehaviour {
 	public Text weightText;
 	public Text medicineText;
 	public CabinetManager deManager;
+
+	public List<string> userChoices;
 
 	public MedicalAppData MedicalAppData
 	{
@@ -59,9 +63,29 @@ public class MedicalAppDataManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+		if (Input.GetKeyDown(KeyCode.P))
+		{
+			WriteString();
+		}
 	}
+	void WriteString()
+	{
+		string path = "EventLog.txt";
+		Debug.Log("Printing file");
+		//Write some text to the test.txt file
+		StreamWriter writer = new StreamWriter(path, true);
+
+		foreach (string text in userChoices)
+		{
+			writer.WriteLine(text);
+		}
+		
+		writer.Close();
+
+	}
+
 
 	public void LoadAppData(MedicalAppData _loadedData)
 	{

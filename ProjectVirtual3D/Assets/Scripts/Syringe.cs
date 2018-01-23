@@ -46,54 +46,67 @@ public class Syringe : MonoBehaviour {
 			{
 		case "Trigger_LeftHand":
 			Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("LeftHand");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightHand":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("RightHand");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftLowerThigh":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("LeftLowerThigh");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightLowerThigh":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("RightLowerThigh");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftUpperArm":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("LeftUpperArm");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightUpperArm":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("RightUpperArm");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftLowerArm":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("LeftLowerArm");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightLowerArm":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("RightLowerArm");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftAbdomen":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("LeftAbdomen");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightAbdomen":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("RightAbdomen");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftButtock":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("LeftButtock");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightButtock":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("RightButtock");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_Mouth":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+				SoundManager.instance.PlaySound("Mouth");
 				ShowInjectionToolTip (col);
 				break;
 			case "MedicineBottle":
@@ -108,6 +121,7 @@ public class Syringe : MonoBehaviour {
 				else 
 				{
 					Debug.Log ("the amount selected will fit in this syringe");
+					SoundManager.instance.PlaySound("Ping");
 					StartCoroutine (SyringeFill ());
 				}
 				break;
@@ -238,6 +252,7 @@ public class Syringe : MonoBehaviour {
 
 	public IEnumerator SyringeFill()
 	{
+		MedicalAppDataManager.instance.userChoices.Add("User filled syringe with a medicine liquid");
 		amountInSyringe += +bottleScript.selectedAmount;
 		UpdateTooltip ();
 		syringeTooltip.UpdateText (syringeTooltipText);
@@ -245,6 +260,7 @@ public class Syringe : MonoBehaviour {
 		syringeTooltip.gameObject.SetActive (true);
 		yield return new WaitForSeconds (errorShowTime);
 		syringeTooltip.gameObject.SetActive (false);
+		
 	}
 
 	public void Inject()
@@ -259,8 +275,16 @@ public class Syringe : MonoBehaviour {
 		} 
 		else 
 		{
-			amountInSyringe = 0;
-			ShowinjectionCompletionTooltip();
+			if (gameObject.tag == "Syringe" && !currentCollidingObject.gameObject.name.Contains("Mond"))
+			{
+				amountInSyringe = 0;
+				ShowinjectionCompletionTooltip("succes");
+			}
+			else
+			{
+				ShowinjectionCompletionTooltip("wrong");
+			}
+		
 		}
 	}
 
@@ -296,22 +320,27 @@ public class Syringe : MonoBehaviour {
 		syringeTooltip.gameObject.SetActive (false);
 	}
 
-	public void ShowinjectionCompletionTooltip()
+	public void ShowinjectionCompletionTooltip(string _outcome)
 	{
 		//Depending on good or bad injection poitioning the tooltip will go green or red
+		string newToolTipNameText;
+		newToolTipNameText = currentCollidingObject.gameObject.name.Replace("_", " ");
+		switch (_outcome)
+		{
+			case "succes":
+				syringeTooltip.containerColor = goodColor;
+				syringeTooltip.UpdateText(succesfullInjectionMessage + newToolTipNameText);
+				SoundManager.instance.PlaySound("Succes");
+				MedicalAppDataManager.instance.userChoices.Add("User succesfully injected medicine into " + newToolTipNameText);
+				break;
+			case "wrong":
+				syringeTooltip.containerColor = faultColor;
+				syringeTooltip.UpdateText("Wrong injection point");
+				SoundManager.instance.PlaySound("Wrong");
+				MedicalAppDataManager.instance.userChoices.Add("User wrongfully injected medicine into " + newToolTipNameText);
+				break;
 
-		if (currentCollidingObject.name.Contains("Arm"))
-		{
-			syringeTooltip.containerColor = goodColor;
-			syringeTooltip.UpdateText(succesfullInjectionMessage + currentCollidingObject.name);
-			SoundManager.instance.PlaySound("Succes");
 		}
-		else
-		{
-			syringeTooltip.containerColor = faultColor;
-			syringeTooltip.UpdateText("Wrong injection point");
-			SoundManager.instance.PlaySound("Wrong");
-		}
-	
+
 	}
 }

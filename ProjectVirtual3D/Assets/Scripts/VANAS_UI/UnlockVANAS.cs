@@ -75,6 +75,7 @@ public class UnlockVANAS : MonoBehaviour
 				screen.GetComponent<MeshRenderer>().material = screenAccesGrantedColor;
 				patientUI.SetActive(true);
 				StartCoroutine(Blink(timeToBlink));
+				MedicalAppDataManager.instance.userChoices.Add("User scanned badge and accessed the VANAS UI");
 				alreadyOn = true;
 
 			}
