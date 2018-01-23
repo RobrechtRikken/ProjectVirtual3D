@@ -1,0 +1,25 @@
+User scanned badge and accessed the VANAS UI
+User selected patient Tim Roelandts
+User is selecting another medicine
+User selected medicine Metoclopramide - 2ml
+User filled syringe with a medicine liquid
+User wrongfully injected medicine into Mond
+User succesfully injected medicine into Left Hand
+User scanned badge and accessed the VANAS UI
+User selected patient Kristien Peeters
+User is selecting a new patient
+User selected patient Mieke Janssens
+User is selecting a new patient
+User selected patient Kristien Peeters
+User is selecting another medicine
+User selected medicine Lorazepam - 1mg
+User is selecting another medicine
+User selected medicine Insuline - 100units
+User filled syringe with a medicine liquid
+User filled syringe with a medicine liquid
+User filled syringe with a medicine liquid
+User filled syringe with a medicine liquid
+User filled syringe with a medicine liquid
+User filled syringe with a medicine liquid
+User filled syringe with a medicine liquid
+User succesfully injected medicine into Left Lower Thigh (1)

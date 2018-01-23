@@ -1,0 +1,8 @@
+User filled syringe with a Bottle_Insuline(Clone)  liquid
+User scanned badge and accessed the VANAS UI
+User filled syringe with a Bottle_Insuline(Clone)  liquid
+User wrongfully injected medicine into Mond
+User wrongfully injected medicine into Mond
+User wrongfully injected medicine into Mond
+User wrongfully injected medicine into Mond
+User succesfully injected medicine into Right Abdomen

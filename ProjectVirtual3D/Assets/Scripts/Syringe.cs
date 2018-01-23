@@ -121,8 +121,7 @@ public class Syringe : MonoBehaviour {
 				else 
 				{
 					Debug.Log ("the amount selected will fit in this syringe");
-					SoundManager.instance.PlaySound("Ping");
-					StartCoroutine (SyringeFill ());
+				StartCoroutine (SyringeFill(col.gameObject.name));
 				}
 				break;
 
@@ -250,9 +249,10 @@ public class Syringe : MonoBehaviour {
 		syringeTooltip.gameObject.SetActive (false);
 	}
 
-	public IEnumerator SyringeFill()
+	public IEnumerator SyringeFill(string medicineParent)
 	{
-		MedicalAppDataManager.instance.userChoices.Add("User filled syringe with a medicine liquid");
+		SoundManager.instance.PlaySound("Ping");
+		MedicalAppDataManager.instance.userChoices.Add("User filled syringe with a " + medicineParent + "  liquid");
 		amountInSyringe += +bottleScript.selectedAmount;
 		UpdateTooltip ();
 		syringeTooltip.UpdateText (syringeTooltipText);
