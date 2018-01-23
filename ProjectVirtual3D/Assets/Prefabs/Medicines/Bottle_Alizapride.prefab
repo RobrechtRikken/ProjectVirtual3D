@@ -178,6 +178,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1860185745213684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4370549721803366}
+  m_Layer: 0
+  m_Name: SnapGrab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1860431429040354
 GameObject:
   m_ObjectHideFlags: 1
@@ -226,7 +241,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1890288189193306}
   m_LocalRotation: {x: -0.29721034, y: 0.64161205, z: -0.64161205, w: -0.29721034}
-  m_LocalPosition: {x: -22.366446, y: 1.4583484, z: -29.405636}
+  m_LocalPosition: {x: -28.535, y: 1.4705, z: -23.57}
   m_LocalScale: {x: 0.5000001, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4054704107891680}
@@ -235,6 +250,7 @@ Transform:
   - {fileID: 4862184158727322}
   - {fileID: 4100673670284658}
   - {fileID: 4262060989479226}
+  - {fileID: 4370549721803366}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -292,6 +308,19 @@ Transform:
   m_Father: {fileID: 4047712956794210}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4370549721803366
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1860185745213684}
+  m_LocalRotation: {x: 0.9396927, y: -0, z: -0, w: -0.3420201}
+  m_LocalPosition: {x: 0.029, y: -0.193, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4047712956794210}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 220, y: 0, z: 0}
 --- !u!4 &4672581725673028
 Transform:
   m_ObjectHideFlags: 1
@@ -525,8 +554,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precisionGrab: 1
-  rightSnapHandle: {fileID: 4100673670284658}
+  precisionGrab: 0
+  rightSnapHandle: {fileID: 4370549721803366}
   leftSnapHandle: {fileID: 0}
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
