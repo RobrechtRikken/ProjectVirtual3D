@@ -35,6 +35,7 @@ void Start () {
 		}
 		//Sets this to not be destroyed when reloading scene
 		DontDestroyOnLoad(gameObject);
+		LoadAllAudioClips();
 	}
 
 	void LoadAllAudioClips()
