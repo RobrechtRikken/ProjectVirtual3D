@@ -21,7 +21,7 @@ public class Syringe : MonoBehaviour {
 	private string syringeTooltipText;
 	private string injectText = "Inject ";
 	private string syringeEmpty = "Syringe is empty";
-	private string succesfullInjectionMessage = "Succesfully injected into : ";
+	private string succesfullInjectionMessage = "Injected: ";
 	// Use this for initialization
 	void Start () {
 		basicColor = new Color(0.18f,0.58f,0.96f);
@@ -249,6 +249,9 @@ public class Syringe : MonoBehaviour {
 
 	public void Inject()
 	{
+
+		//Check first if the medicine is allowed in this body part if it is we inject it
+		//else we buzzz and don't inject and give feedback that it is wrong
 		Debug.Log ("CURRENTLY INJECTING");
 		if (currentCollidingObject == null || amountInSyringe == 0) 
 		{
@@ -306,7 +309,7 @@ public class Syringe : MonoBehaviour {
 		else
 		{
 			syringeTooltip.containerColor = faultColor;
-			syringeTooltip.UpdateText("Can't inject this here");
+			syringeTooltip.UpdateText("Wrong injection point");
 			SoundManager.instance.PlaySound("Wrong");
 		}
 	
