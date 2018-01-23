@@ -12,10 +12,14 @@ public class PatientManager : MonoBehaviour {
 	private bool hasSelectedPatient = false;
 	public GameObject patientUI, medicineUI,newMedicineUI,patientInfoUI;
 	public InputField patientText, medicijnText;
-	public DrawerManager drawManager;
+	public CabinetManager cabinetManager;
 	public GameObject vanasUI;
 	private List<Patient> patientList = new List<Patient>();
 	public GameObject patientInfoPrefab;
+	public string tempMedicineName = "0";
+	public string subbedSelectedMedicine = "";
+	public int tempCabinet;
+	public int neededDrawerID;
 
 	[SerializeField]
 	private float timeToBlink = 3f; //blink the "check to your left" text for X seconds when entering
@@ -104,6 +108,10 @@ public class PatientManager : MonoBehaviour {
 	//This gets called when we click on a medicine name
 	public IEnumerator UnlockDrawer(string _selectedMedicine)
 	{
+		tempMedicineName = "0";
+		subbedSelectedMedicine = "";
+		tempCabinet = 0;
+		neededDrawerID = 0;
 		//if no drawer unlocked we wait for x seconds, then we unlock the drawer with the given medicine
 		//if drawer is already unlocked return
 
@@ -114,7 +122,43 @@ public class PatientManager : MonoBehaviour {
 		medicineUI.SetActive(false);
 		newMedicineUI.SetActive(true);
 		StartCoroutine(BlinkOnOff(timeToBlink));
-		drawManager.OpenARandomDrawer();
+		for (int i = 0; i < MedicalAppDataManager.instance.MedicalAppData.mDrawers.Count; i++) 
+		{
+			for (int j = 0; j < MedicalAppDataManager.instance.MedicalAppData.mDrawers [i].mMedicines.Count; j++) 
+			{
+				if (tempMedicineName == subbedSelectedMedicine) 
+				{
+					break;
+				}
+				tempMedicineName = MedicalAppDataManager.instance.MedicalAppData.mMedicines.Find (o => o.mID == MedicalAppDataManager.instance.MedicalAppData.mDrawers [i].mMedicines [j]).mName;
+				Debug.Log (tempMedicineName + " = temp medicine");
+				neededDrawerID = i;
+				Debug.Log ("Drawer ID = " + neededDrawerID);
+				subbedSelectedMedicine = _selectedMedicine.Substring (0, tempMedicineName.Length);
+				 
+			}
+		}
+
+		for (int i = 0; i < MedicalAppDataManager.instance.MedicalAppData.mCabinets.Count; i++) 
+		{
+			if (MedicalAppDataManager.instance.MedicalAppData.mCabinets [i].mDrawers.Contains (neededDrawerID)) 
+			{
+				tempCabinet = i;
+				Debug.Log("Temp cabinet = " + tempCabinet);
+			}
+			/*for (int j = 0; j < MedicalAppDataManager.instance.MedicalAppData.mCabinets[i].mDrawers.Count; j++) 
+			{
+				if (tempCabinet == neededDrawerID) 
+				{
+					break;
+				}
+				tempCabinet = MedicalAppDataManager.instance.MedicalAppData.mCabinets.Find (o => o.mID == MedicalAppDataManager.instance.MedicalAppData.mCabinets [i].mDrawers.Find(
+				Debug.Log (tempMedicineName + " = temp medicine");
+				int neededDrawerID = i;
+				subbedSelectedMedicine = _selectedMedicine.Substring (0, tempMedicineName.Length);
+			}*/
+		}
+		cabinetManager.OpenDrawer(tempCabinet, neededDrawerID);
 	}
 
 	public IEnumerator AnotherMedicine()
@@ -153,7 +197,7 @@ public class PatientManager : MonoBehaviour {
 
 	public IEnumerator ExitVanas()
 	{
-		drawManager.Reset();
+		//drawManager.Reset();
 		Debug.Log("EXIT VANAS");
 		yield return new WaitForSeconds(1f);
 		patientText.text = "";

@@ -65,7 +65,7 @@ public class CabinetManager : MonoBehaviour {
 				Debug.Log ("SPAWNLOCATIONLIST CLEARED FOR NEXT DRAWER");
 
 				//if (j < theCabinet.mDrawers.Count) {
-					cabinetDrawerId = theCabinet.mDrawers [j];
+					cabinetDrawerId = theCabinet.mDrawers[j];
 				//}
 				CabinetDrawer theCabinetDrawer = MedicalAppDataManager.instance.MedicalAppData.mDrawers.Find (o => o.mID == cabinetDrawerId); 
 				if (theCabinetDrawer == null) {
@@ -77,7 +77,7 @@ public class CabinetManager : MonoBehaviour {
 					if (theCabinetDrawer.mMedicines.Count != 0)
 					{
 						//CREATE SPAWNLIST FOR THIS DRAWER ONCE
-						Transform[] allChildren = drawerArray[i,j].GetComponentsInChildren<Transform>();
+						Transform[] allChildren = drawerArray[i,theCabinetDrawer.mID].GetComponentsInChildren<Transform>();
 						foreach (Transform child in allChildren) 
 						{
 						//	Debug.Log ("the child we are checking for a slotTag is : " + child.name);
