@@ -52,4 +52,14 @@ void Start () {
 		audioSource.clip = listOfSounds.Find(o => o.name == (_soundName)); //Set the audiclip to the given parameter
 		audioSource.PlayOneShot(audioSource.clip);
 	}
+
+	public void PlaySoundHover(string _soundName)
+	{
+		audioSource.clip = listOfSounds.Find(o => o.name == (_soundName)); //Set the audiclip to the given parameter
+		if (!audioSource.isPlaying)
+		{
+			audioSource.PlayOneShot(audioSource.clip);
+		}
+		
+	}
 }

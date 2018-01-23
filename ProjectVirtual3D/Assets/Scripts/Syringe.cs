@@ -46,67 +46,67 @@ public class Syringe : MonoBehaviour {
 			{
 		case "Trigger_LeftHand":
 			Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("LeftHand");
+				SoundManager.instance.PlaySoundHover("LeftHand");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightHand":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("RightHand");
+				SoundManager.instance.PlaySoundHover("RightHand");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftLowerThigh":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("LeftLowerThigh");
+				SoundManager.instance.PlaySoundHover("LeftLowerThigh");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightLowerThigh":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("RightLowerThigh");
+				SoundManager.instance.PlaySoundHover("RightLowerThigh");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftUpperArm":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("LeftUpperArm");
+				SoundManager.instance.PlaySoundHover("LeftUpperArm");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightUpperArm":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("RightUpperArm");
+				SoundManager.instance.PlaySoundHover("RightUpperArm");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftLowerArm":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("LeftLowerArm");
+				SoundManager.instance.PlaySoundHover("LeftLowerArm");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightLowerArm":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("RightLowerArm");
+				SoundManager.instance.PlaySoundHover("RightLowerArm");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftAbdomen":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("LeftAbdomen");
+				SoundManager.instance.PlaySoundHover("LeftAbdomen");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightAbdomen":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("RightAbdomen");
+				SoundManager.instance.PlaySoundHover("RightAbdomen");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_LeftButtock":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("LeftButtock");
+				SoundManager.instance.PlaySoundHover("LeftButtock");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_RightButtock":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("RightButtock");
+				SoundManager.instance.PlaySoundHover("RightButtock");
 				ShowInjectionToolTip (col);
 				break;
 			case "Trigger_Mouth":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
-				SoundManager.instance.PlaySound("Mouth");
+				SoundManager.instance.PlaySoundHover("Mouth");
 				ShowInjectionToolTip (col);
 				break;
 			case "MedicineBottle":
