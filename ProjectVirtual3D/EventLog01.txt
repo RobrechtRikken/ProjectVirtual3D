@@ -97,3 +97,19 @@ New Session:
 ---------------------------------------------------
 New Session:
 ---------------------------------------------------
+New Session:
+1/24/2018 7:23:19 PM: User scanned badge and accessed the VANAS UI
+1/24/2018 7:23:55 PM: User selected patient Tim Roelandts
+1/24/2018 7:24:39 PM: User is selecting another medicine
+1/24/2018 7:24:46 PM: User selected medicine Metoclopramide - 2ml
+1/24/2018 7:25:09 PM: User is selecting another medicine
+1/24/2018 7:25:14 PM: User selected medicine Paracetamol - 500mg
+1/24/2018 7:26:18 PM: User filled syringe with a Bottle_Metoclopramide(Clone)  liquid
+1/24/2018 7:26:54 PM: User cleansed hands
+1/24/2018 7:26:56 PM: User cleansed hands
+1/24/2018 7:27:49 PM: User wrongfully injected medicine  Bottle_Metoclopramide(Clone) into Mond
+1/24/2018 7:27:58 PM: User succesfully injected medicine from Bottle_Metoclopramide(Clone) into Left Upper Arm
+1/24/2018 7:28:24 PM: User wrongfully administered medicine  ParacetemolPill(Clone) to Left Lower Arm
+1/24/2018 7:28:35 PM: User succesfully administered medicine  ParacetemolPill(Clone) to Left Hand
+1/24/2018 7:28:51 PM: User succesfully administered medicine  Glass to Left Hand
+---------------------------------------------------

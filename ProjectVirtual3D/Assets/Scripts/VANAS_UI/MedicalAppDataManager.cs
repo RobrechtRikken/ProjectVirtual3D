@@ -69,7 +69,7 @@ public class MedicalAppDataManager : MonoBehaviour {
 	}
 
 	void Start () {
-		
+		MedicalAppDataManager.instance.AddUserChoice("Session started");
 	}
 	
 	// Update is called once per frame
