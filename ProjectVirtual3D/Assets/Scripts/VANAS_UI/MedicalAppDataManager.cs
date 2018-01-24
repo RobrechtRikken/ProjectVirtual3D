@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MedicalAppDataManager : MonoBehaviour {
 
@@ -15,6 +16,8 @@ public class MedicalAppDataManager : MonoBehaviour {
 	public GameObject goPatientAdult;
 	public GameObject goPatientPregnant;
 	public GameObject goPatientChild;
+	public GameObject player;
+	public Vector3 playerStartPos;
 
 
 	public Text firstNameText;
@@ -66,7 +69,7 @@ public class MedicalAppDataManager : MonoBehaviour {
 	}
 
 	void Start () {
-		
+		playerStartPos = player.transform.position;
 	}
 	
 	// Update is called once per frame
@@ -78,6 +81,16 @@ public class MedicalAppDataManager : MonoBehaviour {
 			{
 				WriteString();
 			}
+		}
+
+		if (Input.GetKeyDown (KeyCode.R)) 
+		{
+			player.transform.position = playerStartPos;
+		}
+
+		if (Input.GetKeyDown (KeyCode.L)) 
+		{
+			SceneManager.LoadScene ("Sprint5");
 		}
 	
 	}
