@@ -110,6 +110,10 @@ public class Syringe : MonoBehaviour {
 				SoundManager.instance.PlaySoundHover("Mouth");
 				ShowInjectionToolTip (col);
 				break;
+		case "Baxter":
+			Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+			ShowInjectionToolTip (col);
+			break;
 			case "MedicineBottle":
 				Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
 				Debug.Log ("Collider with the needle is a medicine bottle and selected amount will be put in the syringe");
@@ -205,7 +209,11 @@ public class Syringe : MonoBehaviour {
 			Debug.Log ("IM LEAVING THIS COLLIDER : " + col.gameObject.tag);
 			ResetInjectionTooltip ();
 			break;
-			case "MedicineBottle":
+		case "Baxter":
+			Debug.Log ("IM COLLIDING WITH THIS : " + col.gameObject.tag);
+			ShowInjectionToolTip (col);
+			break;
+		case "MedicineBottle":
 			Debug.Log ("IM LEAVING THIS COLLIDER : " + col.gameObject.tag);
 			break;
 
@@ -277,7 +285,7 @@ public class Syringe : MonoBehaviour {
 		} 
 		else 
 		{
-			if (gameObject.tag == "Syringe" && !currentCollidingObject.gameObject.name.Contains("Mond"))
+			if (gameObject.tag == "Syringe" || gameObject.tag == "Baxter" && !currentCollidingObject.gameObject.name.Contains("Mond"))
 			{
 				amountInSyringe = 0; //Destroy pill
 				ShowinjectionCompletionTooltip("succes");

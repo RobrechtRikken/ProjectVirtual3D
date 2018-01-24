@@ -59,6 +59,7 @@ TagManager:
   - Drawer6
   - Pill
   - Syringe
+  - Baxter
   layers:
   - Default
   - TransparentFX
