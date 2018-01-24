@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 114587577297470516}
   m_Layer: 0
   m_Name: Iv_bag
-  m_TagString: Untagged
+  m_TagString: Baxter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

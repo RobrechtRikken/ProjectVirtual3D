@@ -285,7 +285,7 @@ public class Syringe : MonoBehaviour {
 		} 
 		else 
 		{
-			if (gameObject.tag == "Syringe" || gameObject.tag == "Baxter" && !currentCollidingObject.gameObject.name.Contains("Mond"))
+			if (gameObject.tag == "Syringe" && !currentCollidingObject.gameObject.name.Contains("Mond"))
 			{
 				amountInSyringe = 0; //Destroy pill
 				ShowinjectionCompletionTooltip("succes");

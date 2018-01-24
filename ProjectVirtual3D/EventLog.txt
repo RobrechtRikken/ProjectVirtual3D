@@ -9,3 +9,58 @@ New Session:
 ---------------------------------------------------
 New Session:
 ---------------------------------------------------
+New Session:
+---------------------------------------------------
+New Session:
+1/24/2018 3:30:01 PM: User scanned badge and accessed the VANAS UI
+1/24/2018 3:32:15 PM: User scanned badge and accessed the VANAS UI
+---------------------------------------------------
+New Session:
+1/24/2018 3:33:36 PM: User scanned badge and accessed the VANAS UI
+1/24/2018 3:33:39 PM: User selected patient Kristien Peeters
+1/24/2018 3:33:42 PM: User is selecting another medicine
+1/24/2018 3:33:45 PM: User selected medicine Metoclopramide - 2ml
+1/24/2018 3:34:10 PM: User closed the VANAS UI
+1/24/2018 3:35:14 PM: User scanned badge and accessed the VANAS UI
+---------------------------------------------------
+New Session:
+---------------------------------------------------
+New Session:
+1/24/2018 3:47:15 PM: User scanned badge and accessed the VANAS UI
+1/24/2018 3:47:18 PM: User selected patient Ludwig Vermeiren
+1/24/2018 3:47:20 PM: User is selecting another medicine
+1/24/2018 3:47:22 PM: User selected medicine Metoclopramide - 2ml
+1/24/2018 3:47:44 PM: User is selecting another medicine
+1/24/2018 3:48:04 PM: User selected medicine BAXTER - 100ml
+1/24/2018 3:48:34 PM: User filled syringe with a Bottle_Metoclopramide(Clone)  liquid
+---------------------------------------------------
+New Session:
+1/24/2018 3:51:53 PM: User scanned badge and accessed the VANAS UI
+1/24/2018 3:51:55 PM: User selected patient Kristien Peeters
+1/24/2018 3:51:58 PM: User is selecting another medicine
+1/24/2018 3:52:02 PM: User selected medicine BAXTER - 100ml
+1/24/2018 3:53:05 PM: User filled syringe with a Bottle_Insuline(Clone)  liquid
+1/24/2018 3:53:13 PM: User succesfully injected medicine from Bottle_Insuline(Clone) into Iv bag
+1/24/2018 3:53:42 PM: User filled syringe with a Bottle_Insuline(Clone)  liquid
+1/24/2018 3:53:42 PM: User filled syringe with a Bottle_Insuline(Clone)  liquid
+1/24/2018 3:54:19 PM: User succesfully injected medicine from Bottle_Insuline(Clone) into Mond
+---------------------------------------------------
+New Session:
+1/24/2018 3:57:08 PM: User filled syringe with a Bottle_Insuline(Clone)  liquid
+1/24/2018 3:57:11 PM: User wrongfully injected medicine  Bottle_Insuline(Clone) into Mond
+1/24/2018 3:57:13 PM: User wrongfully injected medicine  Bottle_Insuline(Clone) into Mond
+1/24/2018 3:57:14 PM: User wrongfully injected medicine  Bottle_Insuline(Clone) into Mond
+1/24/2018 3:57:14 PM: User wrongfully injected medicine  Bottle_Insuline(Clone) into Mond
+1/24/2018 3:57:14 PM: User wrongfully injected medicine  Bottle_Insuline(Clone) into Mond
+1/24/2018 3:57:17 PM: User succesfully injected medicine from Bottle_Insuline(Clone) into Left Hand
+---------------------------------------------------
+New Session:
+---------------------------------------------------
+New Session:
+---------------------------------------------------
+New Session:
+---------------------------------------------------
+New Session:
+---------------------------------------------------
+New Session:
+---------------------------------------------------
