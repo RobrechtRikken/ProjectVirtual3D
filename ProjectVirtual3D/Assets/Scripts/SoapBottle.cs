@@ -22,6 +22,7 @@ public class SoapBottle : MonoBehaviour {
 		SoundManager.instance.PlaySoundHover("SparkleII");
 		theSparkle.Stop ();
 		theSparkle.Play ();
+		MedicalAppDataManager.instance.AddUserChoice("User cleansed hands");
 		//theSparkle.gameObject.SetActive (true);
 	}
 }

@@ -64,3 +64,25 @@ New Session:
 ---------------------------------------------------
 New Session:
 ---------------------------------------------------
+New Session:
+1/24/2018 4:34:28 PM: User scanned badge and accessed the VANAS UI
+1/24/2018 4:34:31 PM: User selected patient Ludwig Vermeiren
+1/24/2018 4:34:33 PM: User is selecting another medicine
+1/24/2018 4:34:36 PM: User selected medicine Lorazepam - 1mg
+---------------------------------------------------
+New Session:
+1/24/2018 4:38:33 PM: User scanned badge and accessed the VANAS UI
+1/24/2018 4:38:36 PM: User selected patient Ludwig Vermeiren
+1/24/2018 4:38:39 PM: User is selecting another medicine
+1/24/2018 4:38:42 PM: User selected medicine Lorazepam - 1mg
+1/24/2018 4:39:05 PM: User is selecting another medicine
+1/24/2018 4:39:07 PM: User selected medicine Lorazepam - 1mg
+1/24/2018 4:40:04 PM: User wrongfully administered medicine  ParacetemolPill(Clone) to Left Lower Arm
+1/24/2018 4:40:06 PM: User wrongfully administered medicine  ParacetemolPill(Clone) to Left Upper Arm
+1/24/2018 4:40:09 PM: User succesfully administered medicine  ParacetemolPill(Clone) to Left Hand
+1/24/2018 4:40:22 PM: User wrongfully administered medicine  LormetazepamPill(Clone) to Left Lower Arm
+1/24/2018 4:40:24 PM: User wrongfully administered medicine  LormetazepamPill(Clone) to Left Abdomen
+1/24/2018 4:40:25 PM: User wrongfully administered medicine  LormetazepamPill(Clone) to Left Lower Thigh (1)
+1/24/2018 4:40:28 PM: User succesfully administered medicine  LormetazepamPill(Clone) to Mond
+1/24/2018 4:40:36 PM: User succesfully administered medicine  LormetazepamPill(Clone) to Mond
+---------------------------------------------------
