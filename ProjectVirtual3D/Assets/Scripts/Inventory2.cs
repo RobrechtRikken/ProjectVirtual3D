@@ -7,11 +7,13 @@ public class Inventory2 : MonoBehaviour
 {
 	public GameObject inventory;
 	public GameObject securityBadge;
+	public ControllerToolTips toolTipsLeft, TooltipsRight;
 
 	// Use this for initialization
 	void Start () 
 	{
 		GetComponent<VRTK_ControllerEvents>().TouchpadPressed += new ControllerInteractionEventHandler(ShowInventory);
+		GetComponent<VRTK_ControllerEvents> ().ButtonTwoPressed += new ControllerInteractionEventHandler (ActivateControllerTooltips);
 		inventory.gameObject.SetActive (false);
 		securityBadge.SetActive (false);
 	}
@@ -52,5 +54,14 @@ public class Inventory2 : MonoBehaviour
 			}
 		}
 
+	}
+
+	public void ActivateControllerTooltips(object sender, ControllerInteractionEventArgs e)
+	{
+		Debug.Log ("Button is pressed TOOLTIPS SHOWING");
+		toolTipsLeft.gameObject.SetActive (true);
+		TooltipsRight.gameObject.SetActive (true);
+		toolTipsLeft.ShowToolTips ();
+		TooltipsRight.ShowToolTips ();
 	}
 }

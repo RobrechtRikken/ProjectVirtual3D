@@ -17,10 +17,18 @@ public class ControllerToolTips : MonoBehaviour
 	void Update () 
 	{
 		toolTipShowTimer -= Time.deltaTime;
-		if(toolTipShowTimer <= 0)
+		if (toolTipShowTimer <= 0) {
+			this.gameObject.SetActive (false);
+		} 
+		else 
 		{
-			this.gameObject.SetActive(false);
+			this.gameObject.SetActive (true);
 		}
 		
+	}
+
+	public void ShowToolTips()
+	{
+		toolTipShowTimer = 10f;
 	}
 }
