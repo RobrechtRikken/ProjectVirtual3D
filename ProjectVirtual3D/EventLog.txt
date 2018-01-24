@@ -7,3 +7,5 @@ New Session:
 1/24/2018 12:55:18 AM: User wrongfully injected medicine  Bottle_Metoclopramide(Clone) into Mond
 1/24/2018 12:55:26 AM: User succesfully injected medicine from Bottle_Metoclopramide(Clone) into Left Lower Thigh (1)
 ---------------------------------------------------
+New Session:
+---------------------------------------------------

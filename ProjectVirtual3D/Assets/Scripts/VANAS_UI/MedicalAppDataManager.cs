@@ -25,6 +25,8 @@ public class MedicalAppDataManager : MonoBehaviour {
 	public Text medicineText;
 	public CabinetManager deManager;
 
+	private bool savedFile = false;
+
 	public List<string> userChoices;
 
 	public MedicalAppData MedicalAppData
@@ -70,7 +72,19 @@ public class MedicalAppDataManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown(KeyCode.P))
+		if (!savedFile)
+		{
+			if (Input.GetKeyDown(KeyCode.P))
+			{
+				WriteString();
+			}
+		}
+	
+	}
+
+	void OnApplicationQuit()
+	{
+		if (!savedFile)
 		{
 			WriteString();
 		}
@@ -91,6 +105,7 @@ public class MedicalAppDataManager : MonoBehaviour {
 		writer.WriteLine("---------------------------------------------------");
 		
 		writer.Close();
+		savedFile = true;
 
 	}
 
