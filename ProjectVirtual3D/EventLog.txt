@@ -95,3 +95,5 @@ New Session:
 1/24/2018 4:46:02 PM: User succesfully administered medicine  Glass(Clone) to Left Hand
 1/24/2018 4:46:07 PM: User succesfully administered medicine  Glass(Clone)(Clone) to Mond
 ---------------------------------------------------
+New Session:
+---------------------------------------------------
