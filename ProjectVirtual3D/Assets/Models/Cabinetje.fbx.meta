@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 09375a45b7c7eef43850ea0df3138896
+timeCreated: 1516837981
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Drawer1
+    100004: Drawer3
+    100006: Drawer4
+    100008: Drwer2
+    100010: Wheel
+    100012: Wheel_2
+    100014: Wheel_3
+    100016: Wheel_4
+    100018: WheelBase
+    100020: WheelBase_2
+    100022: WheelBase_3
+    100024: WheelBase_4
+    100026: WheelBase_Instance
+    100028: WheelBase_Instance_2
+    100030: WheelBase_Instance_3
+    400000: //RootNode
+    400002: Drawer1
+    400004: Drawer3
+    400006: Drawer4
+    400008: Drwer2
+    400010: Wheel
+    400012: Wheel_2
+    400014: Wheel_3
+    400016: Wheel_4
+    400018: WheelBase
+    400020: WheelBase_2
+    400022: WheelBase_3
+    400024: WheelBase_4
+    400026: WheelBase_Instance
+    400028: WheelBase_Instance_2
+    400030: WheelBase_Instance_3
+    2300000: //RootNode
+    2300002: Drawer1
+    2300004: Drawer3
+    2300006: Drawer4
+    2300008: Drwer2
+    2300010: Wheel
+    2300012: Wheel_2
+    2300014: Wheel_3
+    2300016: Wheel_4
+    2300018: WheelBase
+    2300020: WheelBase_2
+    2300022: WheelBase_3
+    2300024: WheelBase_4
+    3300000: //RootNode
+    3300002: Drawer1
+    3300004: Drawer3
+    3300006: Drawer4
+    3300008: Drwer2
+    3300010: Wheel
+    3300012: Wheel_2
+    3300014: Wheel_3
+    3300016: Wheel_4
+    3300018: WheelBase
+    3300020: WheelBase_2
+    3300022: WheelBase_3
+    3300024: WheelBase_4
+    4300000: Cabinet
+    4300002: Drawer1
+    4300004: Drwer2
+    4300006: Drawer3
+    4300008: Drawer4
+    4300010: WheelBase
+    4300012: Wheel
+    4300014: WheelBase_2
+    4300016: Wheel_2
+    4300018: WheelBase_3
+    4300020: Wheel_3
+    4300022: WheelBase_4
+    4300024: Wheel_4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
